@@ -1,20 +1,28 @@
-# Today I Learned
+# TIL
+
+>Today I learned
+
+Archive of short notes gathered in the process of lifelong learing, since 2022.09.
 
 
-## Field
-### Javascript
 
-* Vanilla Coding - Starter Kit
-    * [01. Topic1 (제목1)](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc1.md)
-    * [02. Topic2 (제목2)](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc2.md)
-    * [03. Topic3 (제목3)](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc3.md)
+---
 
-* Vanilla Coding - Prep
-    * [01. Recursion (재귀)]
+## JavaScript
 
-### HTML & CSS
+* [001. Topic1 (제목1)](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc1.md)
+* [002. Topic2 (제목2)](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc2.md)
+* [003. Topic3 (제목3)](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc3.md)
 
-* Vanilla Coding - Starter Kit
-    * [01. Topic1 (제목1)]
+## HTML / CSS / Webpage Interaction
+* [001. [CSS] Basic structure](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc1.md)
+* [002. [CSS] Display: flex](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc2.md)
+* [003. [CSS] Selector (선택자)](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc3.md)
+* [004. [JavaScript] DOM Element](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc3.md)
 
+## VS Code
+* [01. Using VS Code](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc1.md)
+
+## Github
+* [01. Commit](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc1.md)
 

@@ -136,11 +136,3 @@ arr.sort( (a, b) => a - b)
 
 // 화살표 함수쓰지 않았을 경우
 arr.sort( function(a, b) { return a - b; } )
-
-
-
-
-// TIL Rearrange
-
-
-
