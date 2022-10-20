@@ -17,7 +17,7 @@ Archive of short notes gathered in the process of lifelong learing, since 2022.0
 * [004. Closure](https://github.com/j25nkh/TIL/blob/master/JavaScript/Closure.md)
 * [004. Recursion (재귀)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Recursion.md)
 * [004. Call Stack](https://github.com/j25nkh/TIL/blob/master/JavaScript/Call_stack.md)
-* [004. HOF - Higher Order Function](https://github.com/j25nkh/TIL/blob/master/JavaScript/HOF)
+* [004. HOF - Higher Order Function](https://github.com/j25nkh/TIL/blob/master/JavaScript/HOF.md)
 * [004. This](https://github.com/j25nkh/TIL/blob/master/JavaScript/This.md)
 
 ## HTML / CSS / Webpage Interaction
