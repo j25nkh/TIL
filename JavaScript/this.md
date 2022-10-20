@@ -46,15 +46,15 @@ person.printAge();
 여기서 this는 윈도우
 
 ```JavaScript
-
+1
 ```
 
 ```JavaScript
-
+2
 ```
 
 ```JavaScript
-
+3
 ```
 
 
