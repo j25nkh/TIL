@@ -14,6 +14,13 @@ Archive of short notes gathered in the process of lifelong learing, since 2022.0
 * [002. Topic2 (제목2)](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc2.md)
 * [003. Topic3 (제목3)](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc3.md)
 
+* [004. Closure & Execution Context](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)
+* [004. Recursion (재귀)](https://github.com/j25nkh/TIL/blob/master/JavaScript/recursion.md)
+* [004. Closure](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)
+* [004. Call Stack](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)
+* [004. HOF - Higher Order Function](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)
+* [004. This](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)
+
 ## HTML / CSS / Webpage Interaction
 * [001. [CSS] Basic structure](https://github.com/j25nkh/TIL/blob/master/CSS/Basic_structure.md)
 * [002. [CSS] Display: flex](https://github.com/j25nkh/TIL/blob/master/CSS/Display_flex.md)

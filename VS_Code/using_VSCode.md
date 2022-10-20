@@ -17,4 +17,8 @@
 3. variable / object / date 명을 코드에 입력하는 것만으로도 변수값을 보여줌 (console.log를 사용할 필요 x)
 4. VS Code 재실행 때마다 start on current file 활성화 해야함
 
+# .md 파일 preview
+
+1. 상단 탭 우클릭 → open preview
+
 
