@@ -10,8 +10,9 @@ Element (요소) 선택방법:
 - Class: document.getElement`s`ByClassName("~");
 - Tag: document.getElement`s`ByTagName("~");
 - Selector: 
-    - document.querySelector("`.`~");
-    - document.querySelector`All`("`#`~"); (#~, .~, p 등)
+    - document.querySelector(".~");
+    - document.querySelector`All`("#~"); 
+    - (#~, .~, p 등으로 사용)
     
 
 # Element 조작

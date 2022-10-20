@@ -18,7 +18,7 @@ Archive of short notes gathered in the process of lifelong learing, since 2022.0
 * [001. [CSS] Basic structure](https://github.com/j25nkh/TIL/blob/master/CSS/Basic_structure.md)
 * [002. [CSS] Display: flex](https://github.com/j25nkh/TIL/blob/master/CSS/Display_flex.md)
 * [003. [CSS] Selector (선택자)](https://github.com/j25nkh/TIL/blob/master/CSS/Selector.md)
-* [004. [JavaScript] DOM Element](https://github.com/j25nkh/TIL/tree/master/Webpage_interaction)
+* [004. [JavaScript] DOM Element](https://github.com/j25nkh/TIL/blob/master/Webpage_interaction/DOM_element.md)
 
 ## VS Code
 * [001. Using VS Code](https://github.com/j25nkh/TIL/blob/master/VS_Code/using_VSCode.md)

@@ -4,12 +4,12 @@ display: flex를 사용할 경우 정렬방식:
 
 | Selector | Description |
 |---|---|
-| `class: .` | (그룹 내 여러개일 때 사용)|
-| `ID #` | 특수한 1가지에 사용 |
+| class: . | (그룹 내 여러개일 때 사용)|
+| ID # | 특수한 1가지에 사용 |
 | A, B, C | 하나라도 일치 |
 | A B | 특정요소의 하위요소 |
 | A > B | "직속 1단계" 자식요소 |
-| `*` | 전체 |
+| * | 전체 |
 | A + B | A 바로 다음의 B만 (Child가 아닌 동등 레벨) |
 | A ~ B | A 다음 B들 |
 | A[href="url"] | (href는 attribute) |
