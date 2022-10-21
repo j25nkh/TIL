@@ -264,3 +264,75 @@ setTimeout(() => {
 ```JavaScript
 
 ```
+
+# This 예제
+
+```JavaScript
+var obj = {
+  a: console.log(this), // --- (1)
+  fn: function() {
+    console.log(this); // --- (2)
+    function fn() {
+      console.log(this); // --- (3)
+    }
+    fn();
+  }
+}
+
+obj.a;
+obj.fn();
+```
+1. This는 함수가 실행되어야 값이 정해지는데, 1번에서는 실행된 함수가 없음. 그래서 여기에 없는 this를 찾기 위해 상위 (글로벌)에서 this를 찾음. 그래서 답은 `global object`
+
+2. Obj.fn()가 dot notation으로 실행되었기 때문에 this는 `obj`
+
+3. fn()의 형태로 일반적 실행이니 this는 `global object`
+
+
+```JavaScript
+globalThis.baz = 1;
+
+const obj = {
+  baz: 101,
+
+  func1: function () {
+    console.log("func1 = ", baz, this.baz); // --- (1)
+
+    const func2 = function () {
+      console.log("func2 = ", baz, this.baz); // --- (2)
+    };
+
+    func2();
+  };
+};
+
+obj.func1();
+```
+1. baz는 1, this.baz는 101 (위에 baz: 101 이건 그냥 객체)
+
+2. 1, 1 (일반실행)
+
+```JavaScript
+globalThis.baz = 1;
+
+function Constructor {
+  this.baz = 201;
+
+  this.func3 = function () {
+    console.log("func3 = ", baz, this.baz); // --- (1)
+
+    func4();
+  };
+
+  const func4 = function () {
+    console.log("func4 = ", baz, this.baz); // --- (2)
+  };
+}
+  
+const instance = new Constructor();
+instance.func3();
+```
+
+1. 1 (this.func3에 값이 없어서 상위에서 baz값을 찾음), 201
+
+2. 1 (같은 이유), 1 (일반실행)

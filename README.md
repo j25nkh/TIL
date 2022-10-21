@@ -10,9 +10,15 @@ Archive of short notes gathered in the process of lifelong learing, since 2022.0
 
 ## JavaScript
 
+* [004. Style Guide](https://github.com/j25nkh/TIL/blob/master/JavaScript/Style_guide.md)
+
 * [001. Topic1 (제목1)](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc1.md)
 * [002. Topic2 (제목2)](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc2.md)
 * [003. Topic3 (제목3)](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc3.md)
+
+* [004. Variable (변수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Variable.md)
+* [004. Equal Operator (== vs ===)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Equal_operator.md)
+* [004. Debugging](https://github.com/j25nkh/TIL/blob/master/JavaScript/Debugging.md)
 
 * [004. Closure](https://github.com/j25nkh/TIL/blob/master/JavaScript/Closure.md)
 * [004. Recursion (재귀)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Recursion.md)
