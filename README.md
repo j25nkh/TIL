@@ -19,6 +19,8 @@ Archive of short notes gathered in the process of lifelong learing, since 2022.0
 * [004. Call Stack](https://github.com/j25nkh/TIL/blob/master/JavaScript/Call_stack.md)
 * [004. HOF - Higher Order Function](https://github.com/j25nkh/TIL/blob/master/JavaScript/HOF.md)
 * [004. This](https://github.com/j25nkh/TIL/blob/master/JavaScript/This.md)
+* [004. Big O](https://github.com/j25nkh/TIL/blob/master/JavaScript/Big_O.md)
+* [004. Linked List](https://github.com/j25nkh/TIL/blob/master/JavaScript/Linked_list.md)
 
 ## HTML / CSS / Webpage Interaction
 * [001. [CSS] Basic structure](https://github.com/j25nkh/TIL/blob/master/CSS/Basic_structure.md)
