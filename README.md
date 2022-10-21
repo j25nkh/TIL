@@ -10,23 +10,19 @@ Archive of short notes gathered in the process of lifelong learing, since 2022.0
 
 ## JavaScript
 
-* [004. Style Guide](https://github.com/j25nkh/TIL/blob/master/JavaScript/Style_guide.md)
+* [001. Style Guide](https://github.com/j25nkh/TIL/blob/master/JavaScript/Style_guide.md)
 
-* [001. Topic1 (제목1)](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc1.md)
-* [002. Topic2 (제목2)](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc2.md)
-* [003. Topic3 (제목3)](https://github.com/j25nkh/TIL/blob/master/JavaScript/TestDoc3.md)
-
-* [004. Variable (변수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Variable.md)
-* [004. Equal Operator (== vs ===)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Equal_operator.md)
+* [002. Variable (변수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Variable.md)
+* [003. Equal Operator (== vs ===)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Equal_operator.md)
 * [004. Debugging](https://github.com/j25nkh/TIL/blob/master/JavaScript/Debugging.md)
 
-* [004. Closure](https://github.com/j25nkh/TIL/blob/master/JavaScript/Closure.md)
-* [004. Recursion (재귀)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Recursion.md)
-* [004. Call Stack](https://github.com/j25nkh/TIL/blob/master/JavaScript/Call_stack.md)
-* [004. HOF - Higher Order Function](https://github.com/j25nkh/TIL/blob/master/JavaScript/HOF.md)
-* [004. This](https://github.com/j25nkh/TIL/blob/master/JavaScript/This.md)
-* [004. Big O](https://github.com/j25nkh/TIL/blob/master/JavaScript/Big_O.md)
-* [004. Linked List](https://github.com/j25nkh/TIL/blob/master/JavaScript/Linked_list.md)
+* [005. Closure](https://github.com/j25nkh/TIL/blob/master/JavaScript/Closure.md)
+* [006. Recursion (재귀)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Recursion.md)
+* [007. Call Stack](https://github.com/j25nkh/TIL/blob/master/JavaScript/Call_stack.md)
+* [008. HOF - Higher Order Function](https://github.com/j25nkh/TIL/blob/master/JavaScript/HOF.md)
+* [009. This](https://github.com/j25nkh/TIL/blob/master/JavaScript/This.md)
+* [010. Big O](https://github.com/j25nkh/TIL/blob/master/JavaScript/Big_O.md)
+* [011. Linked List](https://github.com/j25nkh/TIL/blob/master/JavaScript/Linked_list.md)
 
 ## HTML / CSS / Webpage Interaction
 * [001. [CSS] Basic structure](https://github.com/j25nkh/TIL/blob/master/CSS/Basic_structure.md)
