@@ -11,15 +11,20 @@ If I have to commit something meaningless to make it look like I'm fulfilling ab
 
 * [001. Style Guide](https://github.com/j25nkh/TIL/blob/master/JavaScript/Style_guide.md)
 
-* [002. Variable (변수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Variable.md)
 * [002. Data Type](https://github.com/j25nkh/TIL/blob/master/JavaScript/Data_type.md)
-* [002. Increment/Decrement Operator (증감연산자)](https://github.com/j25nkh/TIL/blob/master/JavaScript/IncDecOperator.md)
+* [002. Variable (변수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Variable.md)
+* [002. Function](https://github.com/j25nkh/TIL/blob/master/JavaScript/Object.md)
+* [002. Function](https://github.com/j25nkh/TIL/blob/master/JavaScript/Function.md)
 
-* [003. Equal Operator (== vs ===)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Equal_operator.md)
-* [004. Debugging](https://github.com/j25nkh/TIL/blob/master/JavaScript/Debugging.md)
+* [002. Falsiness](https://github.com/j25nkh/TIL/blob/master/JavaScript/Falsiness.md)
+* [002. Operator (연산자)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Operator.md)
 
-* [012. Method](https://github.com/j25nkh/TIL/blob/master/JavaScript/Method.md)
+* [012. Method (for number)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Method_number.md)
+* [012. Method (for string)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Method_string.md)
+* [012. Method (for array)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Method_array.md)
 * [012. Shallow Copy (얕은복사)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Shallow_copy.md)
+
+* [004. Debugging](https://github.com/j25nkh/TIL/blob/master/JavaScript/Debugging.md)
 
 * [005. Closure](https://github.com/j25nkh/TIL/blob/master/JavaScript/Closure.md)
 * [006. Recursion (재귀)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Recursion.md)

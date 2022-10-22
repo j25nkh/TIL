@@ -41,4 +41,22 @@ array[2] = 3;
 ```
 
 
+# Hoisting
+
+- 모든 변수 `선언문`은 scope 내에서 최상위로 hoisting 됨
+
+```JavaScript
+console.log(a); // undefined
+var a = 1;
+```
+위 의 함수는 다음과 같이 `변수의 선언`이 최상위로 hoist되어 다음과 같음
+
+```JavaScript
+var a;
+console.log(a); // undefined
+a = 1;
+```
+
+
+
 

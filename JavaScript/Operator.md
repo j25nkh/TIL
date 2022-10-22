@@ -1,3 +1,25 @@
+# Logical Operator
+
+| Operator | - | Description | Note |
+|--- | --- | --- | --- |
+| ll | or | 하나라도 `true`면 `true`. 모든 값이 `false`일 때만 `false` | 그래서 첫 `true`에 평가 멈춤 |
+| && | and | 모든값이 `true`면 `true`. 하나라도 `false`면 `false` | 그래서 첫 `false`에 평가 멈춤 |
+| ! | not | - | - |
+
+- 만약 test1이 false로 변환되는 값이라면 `test1 && test2`는 `test1`을 반환
+- 만약 `false`를 원한다면 !!를 앞에 배치
+
+```JavaScript
+const a = -0 && "text"
+console.log(a) // -0
+
+const b = !-0 && "text"
+console.log(b) // "text"
+
+const c = !!-0 && "text"
+console.log(c) // false
+```
+
 # Equal Operator (== vs. ===)
 
 > Double Equal vs Triple (Strict) Equal Operator 
@@ -35,5 +57,20 @@ if (stringOrNumberOne === 1) {
 - undefined === null  →  false
 - undefined는 할당하지 않은 것, null은 비어있는 것
 - 배열, 객체 (object)는 `==`든 `===`든 모두 false (메모리 참조갑이 다름)
+    - 따라서 array는 loop을 이용해서 item by item 비교
 
 > 결론은 ===을 써서 타입체킹까지 되어야 더 안정적인 코딩이 됨
+
+# Increment / Decrement Operator (증감연산자)
+
+```JavaScript
+let a = 1;
+
+var b = a++; // a = 2, b = 1
+var b = ++a; // a = 2, b = 2
+
+var b = a--; // a = 0, b = 1
+var b = --a; // a = 0, b = 0
+```
+
+
