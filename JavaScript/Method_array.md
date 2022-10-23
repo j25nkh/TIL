@@ -85,3 +85,13 @@ numbers.forEach((number, index, array) => {
     console.log('Index: ' + index + ' value: ' + number + ' array: ' + array);
 });
 ```
+
+# .reduce()
+
+- 2가지 케이스:
+    - 초기값 (accumulator)을 받을 때
+    - 초기값 (accumulator)을 받지 않을 때
+
+```JavaScript
+
+```

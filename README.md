@@ -13,9 +13,7 @@ If I have to commit something meaningless to make it look like I'm fulfilling ab
 
 * [002. Data Type](https://github.com/j25nkh/TIL/blob/master/JavaScript/Data_type.md)
 * [002. Variable (변수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Variable.md)
-* [002. Function](https://github.com/j25nkh/TIL/blob/master/JavaScript/Object.md)
 * [002. Function](https://github.com/j25nkh/TIL/blob/master/JavaScript/Function.md)
-
 * [002. Falsiness](https://github.com/j25nkh/TIL/blob/master/JavaScript/Falsiness.md)
 * [002. Operator (연산자)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Operator.md)
 
