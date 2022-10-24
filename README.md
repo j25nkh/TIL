@@ -12,15 +12,17 @@ If I have to commit something meaningless to make it look like I'm fulfilling ab
 * [001. Style Guide](https://github.com/j25nkh/TIL/blob/master/JavaScript/Style_guide.md)
 
 * [002. Data Type](https://github.com/j25nkh/TIL/blob/master/JavaScript/Data_type.md)
-* [002. Variable (변수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Variable.md)
-* [002. Function](https://github.com/j25nkh/TIL/blob/master/JavaScript/Function.md)
-* [002. Falsiness](https://github.com/j25nkh/TIL/blob/master/JavaScript/Falsiness.md)
-* [002. Operator (연산자)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Operator.md)
+* [003. Variable (변수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Variable.md)
+* [004. Function](https://github.com/j25nkh/TIL/blob/master/JavaScript/Function.md)
+* [005. Falsiness](https://github.com/j25nkh/TIL/blob/master/JavaScript/Falsiness.md)
+* [006. Operator (연산자)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Operator.md)
 
 * [012. Method (for number)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Method_number.md)
 * [012. Method (for string)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Method_string.md)
 * [012. Method (for array)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Method_array.md)
 * [012. Shallow Copy (얕은복사)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Shallow_copy.md)
+* [012. Pure Function & Side Effect (순수함수/사이드이펙트)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Side_effect.md)
+
 
 * [004. Debugging](https://github.com/j25nkh/TIL/blob/master/JavaScript/Debugging.md)
 
