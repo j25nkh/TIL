@@ -13,6 +13,8 @@
 
 # git push (제출)
 
+- Commit 전 받드시` 마지막 줄 1 개행`
+
 1. 업데이트
     - git status
     - git add .
@@ -33,4 +35,22 @@
     - git add .
     - git commit -m "~"
     - git push origin jakejeon
-    
+
+# 로컬에서 생성 후 새로운 REPO를 업로드하는 경우
+
+파일 생성 후 git init을 통해 .git파일 생성 후 진행, 추후 remote로 repo를 연결
+    - git init
+    - git remote add origin 'url' (origin 대신 아무 이름 지어도 됨)
+    - git remote -v로 체크
+
+
+# 로컬에서 수정진행 후 로컬과 다른 수정이 있는 github 클라우드를 가져와서 로컬에서 구성
+
+    - git fetch origin (다운만 받은 상태)
+    - git checkout origin/master (다운 받은 것을 이동해서 보기만 하는 상태 - 수정내용 확인)
+    - git checkout master (master로 다시 이동)
+    - git merge origin origin/master
+
+
+
+   

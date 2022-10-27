@@ -10,12 +10,14 @@
 4. O(n^n)
 5. 기타 등등
 
-| - | stack | Queue | Linked List| Array |
-|---|---|---|---|---|
-| - |Last-in First-out| First-in First-out|-|-|
-| Insertion | O(1) | O(1) | O(1) | O(n) |
-| Deletion | O(1) | O(1) | O(1) | O(n) |
-| Search | O(n) | O(n) | O(n) | O(1) |
+> 자료구조 별 시간복잡도
+
+| - | stack | Queue | Linked List| Array | Hash Table |
+|---|---|---|---|---|---|
+| - |Last-in First-out| First-in First-out|-|-|-|
+| Insertion | O(1) | O(1) | O(1) | O(n) | O(1) |
+| Deletion | O(1) | O(1) | O(1) | O(n) | O(1) |
+| Search | O(n) | O(n) | O(n) | O(1) | O(1) |
 
 ```JavaScript
 function foo(n) {

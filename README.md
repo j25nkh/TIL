@@ -34,6 +34,9 @@ If I have to commit something meaningless to make it look like I'm fulfilling ab
 * [010. Big O](https://github.com/j25nkh/TIL/blob/master/JavaScript/Big_O.md)
 * [011. Linked List](https://github.com/j25nkh/TIL/blob/master/JavaScript/Linked_list.md)
 
+* [011. Prototype](https://github.com/j25nkh/TIL/blob/master/JavaScript/Prototype.md)
+* [011. Hash Table](https://github.com/j25nkh/TIL/blob/master/JavaScript/Hash_table.md)
+
 
 
 ## HTML / CSS / Webpage Interaction
@@ -45,6 +48,6 @@ If I have to commit something meaningless to make it look like I'm fulfilling ab
 ## VS Code
 * [001. Using VS Code](https://github.com/j25nkh/TIL/blob/master/VS_Code/using_VSCode.md)
 
-## Github
-* [001. Commit](https://github.com/j25nkh/TIL/blob/master/Github/commit.md)
-
+## Git
+* [001. Commit](https://github.com/j25nkh/TIL/blob/master/Github/Commit.md)
+* [001. Commands (명령어)](https://github.com/j25nkh/TIL/blob/master/Github/Commands.md)
