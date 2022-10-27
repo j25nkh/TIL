@@ -49,5 +49,5 @@ If I have to commit something meaningless to make it look like I'm fulfilling ab
 * [001. Using VS Code](https://github.com/j25nkh/TIL/blob/master/VS_Code/using_VSCode.md)
 
 ## Git
-* [001. Commit](https://github.com/j25nkh/TIL/blob/master/Github/Commit.md)
-* [001. Commands (명령어)](https://github.com/j25nkh/TIL/blob/master/Github/Commands.md)
+* [001. Commit](https://github.com/j25nkh/TIL/blob/master/Git/Commit.md)
+* [001. Commands (명령어)](https://github.com/j25nkh/TIL/blob/master/Git/Commands.md)
