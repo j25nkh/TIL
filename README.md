@@ -6,6 +6,7 @@
 
 ## JavaScript
 
+* [001. Variable (변수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/variable.md)
 * [001. Data Type](https://github.com/j25nkh/TIL/blob/master/JavaScript/data_type.md)
 * [002. Object (객체)](https://github.com/j25nkh/TIL/blob/master/JavaScript/object.md)
 * [003. Function (함수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/function.md)
