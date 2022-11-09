@@ -15,7 +15,7 @@
 
 ### 제출: git push
 
-- Commit 전 받드시` 마지막 줄 1 개행`
+> Commit 전 받드시` 마지막 줄 1 개행`
 
 1. 업데이트
     - git status

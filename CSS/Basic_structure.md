@@ -1,6 +1,6 @@
 # 기본적인 CSS 구조
 
-기본 문법 예시:
+### 기본 문법 예시:
 
 ```css
 {
@@ -22,7 +22,7 @@ A {
 }
 ```
 
-이미지 주위를 텍스트로 감쌀때:
+### 이미지 주위를 텍스트로 감쌀때:
 ```css
 section {
     float: right; /* 이미지가 오른쪽 */
@@ -30,7 +30,7 @@ section {
 }
 ```
 
-Color system
+### Color system
 - color name (red, orange,...)
 - hex-color
     - '#' + 6자리 색상코드

@@ -1,6 +1,6 @@
 # display: flex
 
-display: flex를 사용할 경우 정렬방식:
+### display: flex를 사용할 경우 정렬방식:
 - `justify-content` (가로정렬)
     - flex-start
     - flex-end
@@ -14,8 +14,7 @@ display: flex를 사용할 경우 정렬방식:
     - flex-end
     - center
     - baseline
-
-align-items 내 항목들의 경우 A안의 a에 대해:
+    - align-items 내 항목들의 경우 A안의 a에 대해:
 ```css
 a {
     order: -3;*/

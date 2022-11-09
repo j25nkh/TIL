@@ -1,6 +1,6 @@
 # Selector (선택자)
 
-display: flex를 사용할 경우 정렬방식:
+- display: flex를 사용할 경우 정렬방식:
 
 | Selector | Description |
 |---|---|
@@ -29,7 +29,7 @@ display: flex를 사용할 경우 정렬방식:
 <a href="image.jpg" data-filetype="image"> image link </a>
 ```
 
-n에 `even`, `odd`, `2n+1`등을 넣어 사용 가능
+- n에 `even`, `odd`, `2n+1`등을 넣어 사용 가능
 
 | Selector | Description |
 |---|---|
