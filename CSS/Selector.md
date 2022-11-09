@@ -1,6 +1,6 @@
 # Selector (선택자)
 
-- display: flex를 사용할 경우 정렬방식:
+### 선택자의 종류
 
 | Selector | Description |
 |---|---|
@@ -24,7 +24,8 @@
 | A[data-filtype = "image] | png, jpeg, jpg, gif |
 
 
-* 예시:
+예시:
+
 ```css
 <a href="image.jpg" data-filetype="image"> image link </a>
 ```
@@ -42,6 +43,3 @@
 | A:only-child |  |
 | A:only-of-type |  |
 | A:first-of-type |  |
-
-
-

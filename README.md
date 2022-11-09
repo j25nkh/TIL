@@ -7,9 +7,16 @@
 ## JavaScript
 
 * [001. Variable (변수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/variable.md)
-* [001. Data Type](https://github.com/j25nkh/TIL/blob/master/JavaScript/data_type.md)
-* [002. Object (객체)](https://github.com/j25nkh/TIL/blob/master/JavaScript/object.md)
-* [003. Function (함수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/function.md)
+* [002. Falsiness & Truthiness](https://github.com/j25nkh/TIL/blob/master/JavaScript/falsiness.md)
+* [003. Operator (연산자)](https://github.com/j25nkh/TIL/blob/master/JavaScript/operator.md)
+* [004. Data Type](https://github.com/j25nkh/TIL/blob/master/JavaScript/data_type.md)
+* [005. Object (객체)](https://github.com/j25nkh/TIL/blob/master/JavaScript/object.md)
+* [006. Method (for string)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Method_string.md)
+* [007. Method (for array)](https://github.com/j25nkh/TIL/blob/master/JavaScript/Method_array.md)
+* [008. Shallow Copy (얕은복사)](https://github.com/j25nkh/TIL/blob/master/JavaScript/shallow_copy.md)
+
+* [008. Function (함수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/function.md)
+* [009. Recursion (재귀)](https://github.com/j25nkh/TIL/blob/master/JavaScript/recursion.md)
 
 ## Git
 * [001. Commit](https://github.com/j25nkh/TIL/blob/master/Git/Commit.md)

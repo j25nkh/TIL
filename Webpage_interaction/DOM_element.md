@@ -27,7 +27,7 @@
 - .classList.contains(string);
 - .classList.replace(old class, new class);
 
-- Element 추가 예시:
+Element 추가 예시:
 
 ```JavaScript
 var menu = document.createElement('a'); 
@@ -60,7 +60,7 @@ document.body.innerHTML=""
 
 - ev가 들어간 괄호에 들어가는 매개변수는 `event객체`라고 하며 통상 event, ev등으로 네이밍. 각종 event에 대한 상세정보가 이미 담겨있음.
 
-- 예제 - HTML파트:
+예제 - HTML파트:
 
 ```HTML
 <div>
@@ -70,7 +70,7 @@ document.body.innerHTML=""
 </div>
 ```
 
-- JavaScript 파트
+JavaScript 파트
 ```JavaScript
 const div = document.querySelector("div");
 div.addEventListener("click", function on Click (ev) {
@@ -84,6 +84,3 @@ div.addEventListener("click", function on Click (ev) {
 - Target vs Current Target
     - ev.target: event가 `발생`한 DOM Element `근원지`를 가리킴
     - ev.currentTarget: event가 `등록`한 DOM Element를 가리킴
-
-
-

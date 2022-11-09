@@ -14,7 +14,9 @@
     - flex-end
     - center
     - baseline
-    - align-items 내 항목들의 경우 A안의 a에 대해:
+
+align-items 내 항목들의 경우 A안의 a에 대해:
+
 ```css
 a {
     order: -3;*/
@@ -53,5 +55,3 @@ A {
     align-content: flex-start; 
 }
 ```
-
-

@@ -1,4 +1,4 @@
-# Function (함수)
+# 선언식 vs. 표현식
 
 ### 함수선언식 - Function Declaration
 
@@ -30,7 +30,7 @@ let d = function () {
 d(); // !
 ```
 
-### Closure (클로저) 함수
+# Closure (클로저) 함수
 
 - `내부함수` (inner function)에서 `외부함수` (outter fuction)의 스코프에 접근을 가능하게 해주는 것
 - 내부함수는 외부함수의 지역변수에 접근할 수 있는데, 외부함수의 실행이 끝나서 소멸된 이후 에도 외부함수의 변수에 접근이 가능함 - 클로저의 메커니즘
@@ -49,3 +49,25 @@ innerFunction(); // sample text
 ```
 
 - innerFunction에 이름없는 function이 담겼으며, 마지막 줄이 실행되었을 때 outterFunction은 실행이 끝났음으로 이 함수의 지역변수가 사라지는 것이 자연스러워 보이나, 클로저 덕분에 `접근이 가능`하였음
+
+# Callback (콜백) 함수
+
+1. 다른 함수의 인자로써 이용되는 함수.
+2. 어떤 이벤트에 의해 호출되어지는 함수.
+- 파라미터로 함수를 전달하는 함수
+- 콜백함수는 이름이 없는 '익명의 함수' 사용
+
+예제: [출처](https://bigtop.tistory.com/35)
+```JavaScript
+function checkGang(count, link, good) {
+    count < 3 ? link() : good();
+  }
+  function linkGang() {
+    console.log('1일 3깡은 기본입니다. 아래 링크를 통해 깡을 시청해주세요');
+    console.log('https://youtu.be/xqFvYsy4wE4');
+  }
+  function goodGang() {
+    console.log('오늘 할당량은 모두 채우셨습니다! :)')
+  }
+  checkGang(2, linkGang, goodGang);  // 여기서 linkGang과 goodGang함수가 콜백함수
+```

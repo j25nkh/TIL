@@ -1,27 +1,98 @@
-/*---------------------------------------------------------------------------------------------------------------------------------------------------
-[Methods]
-forEach: return값 X
-map:     return값 O
-filter:  
-reduce:
-sort:
----------------------------------------------------------------------------------------------------------------------------------------------------*/
-// 0. CallBack 함수
-// 1. 다른 함수의 인자로써 이용되는 함수.
-// 2. 어떤 이벤트에 의해 호출되어지는 함수.
-// 파라미터로 함수를 전달하는 함수
-// 콜백함수는 이름이 없는 '익명의 함수' 사용
-function checkGang(count, link, good) {
-    count < 3 ? link() : good();
-  }
-  function linkGang() {
-    console.log('1일 3깡은 기본입니다. 아래 링크를 통해 깡을 시청해주세요');
-    console.log('https://youtu.be/xqFvYsy4wE4');
-  }
-  function goodGang() {
-    console.log('오늘 할당량은 모두 채우셨습니다! :)')
-  }
-  checkGang(2, linkGang, goodGang);  // 여기서 linkGang과 goodGang함수가 콜백함수
+# Array 요소 추가 / 제거
+
+### .push()
+
+- 맨 마지막 추가
+
+### .pop()
+
+- 맨 마지막 제거
+
+### .shift()
+
+- 맨 앞 제거
+
+### .push()
+
+- 맨 앞 추가
+
+### indexOf
+
+- indexOf(element) →  return key
+
+### splice
+
+-  array.splice(a, b) → a 인덱스부터 b개의 항목을 제거
+
+```JavaScript
+const alphabet = ['A', 'B', 'C', 'D', 'E'];
+let k = alphabet.splice(1, 3);
+
+console.log(alphabet); // [ 'A', 'E' ]
+console.log(k); // [ 'B', 'C', 'D' ]
+```
+
+# Sort()
+
+- sort()는 기본 세팅이 `alphabetical order`
+- 따라서 그냥 sort()를 했을 때 아래와 같이 오름차순으로 정렬이 되지 않음
+
+```JavaScript
+const nums = [1, 2, 16, 35, 44, 100, 200, 500];
+nums.sort();
+console.log(nums);
+// [ 1, 100, 16, 2, 200, 35, 44, 500 ]
+```
+
+이것을 `numertical order`로 쓰려면
+
+```JavaScript
+nums.sort(function (a,b) {
+    return a - b;
+});
+```
+또는 ES6식으로 표현
+
+```JavaScript
+nums.sort((a, b) => a - b);
+```
+
+# forEach()
+
+- return값이 없음
+
+```JavaScript
+const numbers = [1, 2, 3, 4, 5];
+
+// for loop 방식
+for (i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+}
+
+// forEach 사용
+numbers.forEach(function (number) {
+    console.log(number);
+})
+
+// forEach ES6
+numbers.forEach(number => console.log(number))
+
+// forEach는 인자로서 number, index, array를 받음
+numbers.forEach((number, index, array) => {
+    console.log('Index: ' + index + ' value: ' + number + ' array: ' + array);
+});
+```
+
+# map()
+
+- return값이 있음
+
+# filter()
+
+
+
+# reduce()
+
 
   
 
