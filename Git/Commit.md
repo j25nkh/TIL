@@ -1,4 +1,6 @@
-# 내려받기: git Clone
+# Github 협업방법
+
+## 내려받기: git Clone
 
 1. 폴더 생성 후 cmd내 해당 폴더로 dir 이동
     - 또는 해당 폴더 우클릭 -> git bash here
@@ -11,7 +13,7 @@
 4. 클론한 폴더 실행
     - code .
 
-# 제출: git push
+## 제출: git push
 
 > Commit 전 받드시` 마지막 줄 1 개행`
 
