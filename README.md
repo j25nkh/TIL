@@ -5,7 +5,7 @@
 ---
 
 ## JavaScript
----
+
 * [001. Variable (변수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/variable.md)
 * [002. Falsiness & Truthiness](https://github.com/j25nkh/TIL/blob/master/JavaScript/falsiness.md)
 * [003. Operator (연산자)](https://github.com/j25nkh/TIL/blob/master/JavaScript/operator.md)
@@ -14,7 +14,7 @@
 * [006. Method (for string)](https://github.com/j25nkh/TIL/blob/master/JavaScript/method_string.md)
 * [007. Method (for array)](https://github.com/j25nkh/TIL/blob/master/JavaScript/method_array.md)
 * [008. Shallow Copy (얕은복사)](https://github.com/j25nkh/TIL/blob/master/JavaScript/shallow_copy.md)
----
+>
 * [008. Function (함수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/function.md)
 * [009. Recursion (재귀)](https://github.com/j25nkh/TIL/blob/master/JavaScript/recursion.md)
 
