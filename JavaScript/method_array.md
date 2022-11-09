@@ -1,28 +1,15 @@
 # Array 요소 추가 / 제거
 
-### .push()
+| Method | Role |
+|---|---|
+| .unshift() | 맨 앞 추가 |
+| .shift() | 맨 앞 제거 |
+| .push() | 맨 마지막 추가 |
+| .pop() | 맨 마지막 제거 |
+| .indexOf() | 인덱스를 리턴 |
+| .splice() | array.splice(a, b) → a 인덱스부터 b개의 항목을 제거 |
 
-- 맨 마지막 추가
-
-### .pop()
-
-- 맨 마지막 제거
-
-### .shift()
-
-- 맨 앞 제거
-
-### .push()
-
-- 맨 앞 추가
-
-### indexOf
-
-- indexOf(element) →  return key
-
-### splice
-
--  array.splice(a, b) → a 인덱스부터 b개의 항목을 제거
+splice 예제:
 
 ```JavaScript
 const alphabet = ['A', 'B', 'C', 'D', 'E'];
