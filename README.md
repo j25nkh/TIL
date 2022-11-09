@@ -1,6 +1,6 @@
 # TIL
 
-> Archive of notes gernerated in the process of lifelong learing, since 2022.09.
+> Archive of notes gernerated in the process of lifelong learing, `since 2022.09`.
 
 ---
 
