@@ -18,8 +18,7 @@
 * [008. Shallow Copy (얕은복사)](https://github.com/j25nkh/TIL/blob/master/JavaScript/shallow_copy.md)
 >
 * [008. Function (함수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/function.md)
-* [009. Recursion (재귀)](https://github.com/j25nkh/TIL/blob/master/JavaScript/recursion.md)
-* [008. Execution Context (실행컨텍스트)](https://github.com/j25nkh/TIL/blob/master/JavaScript/execution_context.md)
+* [008. Closure (클로저)](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)
 * [009. This](https://github.com/j25nkh/TIL/blob/master/JavaScript/this.md)
 * [009. Contructor Function (생성자함수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/constructor.md)
 * [009. Prototype (프로토타입)](https://github.com/j25nkh/TIL/blob/master/JavaScript/prototype.md)
