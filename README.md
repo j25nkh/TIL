@@ -17,16 +17,15 @@
 * [007. Method (for array)](https://github.com/j25nkh/TIL/blob/master/JavaScript/method_array.md)
 * [008. Shallow Copy (얕은복사)](https://github.com/j25nkh/TIL/blob/master/JavaScript/shallow_copy.md)
 >
-* [008. Function (함수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/function.md)
-* [008. Closure (클로저)](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)
-* [009. This](https://github.com/j25nkh/TIL/blob/master/JavaScript/this.md)
-* [009. Contructor Function (생성자함수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/constructor.md)
-* [009. Prototype (프로토타입)](https://github.com/j25nkh/TIL/blob/master/JavaScript/prototype.md)
+* [009. Function (함수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/function.md)
+* [010. Closure (클로저)](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)
+* [011. This](https://github.com/j25nkh/TIL/blob/master/JavaScript/this.md)
+* [012. Prototype (프로토타입)](https://github.com/j25nkh/TIL/blob/master/JavaScript/prototype.md)
 >
-* [009. Big O](https://github.com/j25nkh/TIL/blob/master/JavaScript/big_O.md)
-* [009. Linked List (연결리스트)](https://github.com/j25nkh/TIL/blob/master/JavaScript/linked_list.md)
-* [009. Hash Table (해시테이블)](https://github.com/j25nkh/TIL/blob/master/JavaScript/hash_table.md)
-* [009. Tree (트리)](https://github.com/j25nkh/TIL/blob/master/JavaScript/tree.md)
+* [013. Big O](https://github.com/j25nkh/TIL/blob/master/JavaScript/big_O.md)
+* [014. Linked List (연결리스트)](https://github.com/j25nkh/TIL/blob/master/JavaScript/linked_list.md)
+* [015. Hash Table (해시테이블)](https://github.com/j25nkh/TIL/blob/master/JavaScript/hash_table.md)
+* [016. Tree (트리)](https://github.com/j25nkh/TIL/blob/master/JavaScript/tree.md)
 
 ## Chrome
 * [001. Debugging (디버깅)](https://github.com/j25nkh/TIL/blob/master/Chrome/debugging.md)
