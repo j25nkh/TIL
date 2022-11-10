@@ -1,18 +1,20 @@
-function addPrefix(x) {
-  return function addVerb(y) {
-    return x + y;
-  };
+function factory_movie(title){
+  return {
+      get_title : function (){
+          return title;
+      },
+      set_title : function(_title){
+          title = _title
+      }
+  }
 }
+ghost = factory_movie('Ghost in the shell');
+matrix = factory_movie('Matrix');
 
-const addUn = addPrefix("un");
-const addRe = addPrefix("re");
+console.log(ghost.get_title()); //Ghost in the shell
+console.log(matrix.get_title()); //Matrix
 
-const word1 = addUn("do");
-const word2 = addRe("do");
-const word3 = addUn("load");
-const word4 = addRe("load");
+ghost.set_title('공각기동대');
 
-console.log(word1);
-console.log(word2);
-console.log(word3);
-console.log(word4);
+console.log(ghost.get_title()); //공각기동대
+console.log(matrix.get_title()); //Matrix
