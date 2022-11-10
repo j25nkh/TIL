@@ -28,35 +28,15 @@ let d = function () {
 }
 
 d(); // !
-```
+``` 
 
-# Callback (콜백) 함수
-
-1. 다른 함수의 인자로써 이용되는 함수.
-2. 어떤 이벤트에 의해 호출되어지는 함수.
-- 파라미터로 함수를 전달하는 함수
-- 콜백함수는 이름이 없는 '익명의 함수' 사용
-
-예제: [출처](https://bigtop.tistory.com/35)
-```JavaScript
-function checkGang(count, link, good) {
-    count < 3 ? link() : good();
-  }
-  function linkGang() {
-    console.log('1일 3깡은 기본입니다. 아래 링크를 통해 깡을 시청해주세요');
-    console.log('https://youtu.be/xqFvYsy4wE4');
-  }
-  function goodGang() {
-    console.log('오늘 할당량은 모두 채우셨습니다! :)')
-  }
-  checkGang(2, linkGang, goodGang);  // 여기서 linkGang과 goodGang함수가 콜백함수
-```
 
 # Recursion Function (재귀)
 
 > 스스로를 다시 부르는 행위
 
-재귀 함수를 구현할 때는 반드시 `Termination Case`가 있어야 함
+- 재귀 함수를 구현할 때는 반드시 `Termination Case`가 있어야 함
+- 개발자 도구를 통한 [Call Stack](https://github.com/j25nkh/TIL/blob/master/Chrome/debugging.md)의 이해
 
 Life of rabbit 예제: 첫 해에는 토끼 한쌍, 토끼가 태어난 후 셋때 해부터 매해 한쌍의 토끼를 낳을 때 n해의 토끼수를 구하는 공식 (`피보나치 수열`)
 
@@ -87,35 +67,29 @@ function factorial(n) {
 // factorial(5) = 120
 ```
 
-
-
-
-# First Class Object (일급객체)
-
-> 어떠한 프로그래밍 언어가 함수를 일급 객체로 다룬다면, 그 언어에서 함수는 일급 함수
-
-JavaScript는 아래의 조건을 만족, JavaScript내에서 함수는 일급 객체:
-
-일급객체의 조건:
-
-- 인자로 전달할 수 있거나
-- 반환 값으로 사용할 수 있거나
-- 변수에 할당될 수 있거나 자료구조에 저장될 수 있거나
-
 # HOF - Higher Order Function (고차함수)
 
-> 함수를 인자로 받거나 반환하는 함수
+### First Class Object (일급객체)
 
-인자로 함수를 받지 않고 함수를 반환하지도 않는다면, First Order Fucntion (일차원 함수 / 일반함수)라고 표현
+- 어떠한 프로그래밍 언어가 함수를 일급 객체로 다룬다면, 그 언어에서 함수는 일급 함수
+- JavaScript는 아래의 조건을 만족함으로 JavaScript내에서 함수는 일급 객체:
+  - 인자로 전달할 수 있거나
+  - 반환 값으로 사용할 수 있거나
+  - 변수에 할당될 수 있거나 자료구조에 저장될 수 있거나
 
-일반함수 예제:
-```JavaScript
-function foo(a, b) {
-  return a + b;
-}
+# Higher Order Function (고차함수)
 
-foo(1, 2);
-```
+- 일반함수 (일차원함수): 인자로 함수를 받지 않고 함수를 반환하지도 않음
+- 고차함수: 인자로 함수를 받거나 (`Callback`), 함수를 리턴하는 함수
+- `map`, `reduce`등도 모두 고차함수
+
+### Callback (콜백) 함수
+
+  1. 다른 함수의 인자로써 이용되는 함수.
+  2. 어떤 이벤트에 의해 호출되어지는 함수.
+  - 파라미터로 함수를 전달하는 함수
+  - 콜백함수는 이름이 없는 `익명의 함수` 사용
+
 
 HOF 예제:
 
@@ -143,7 +117,4 @@ repeat(5, console.log);
 repeat(10, window.alert);
 repeat(20, console.warn);
 ```
-`map`, `reduce`등도 모두 고차함수
-
-
 

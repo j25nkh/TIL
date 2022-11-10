@@ -1,20 +1,15 @@
-function factory_movie(title){
-  return {
-      get_title : function (){
-          return title;
-      },
-      set_title : function(_title){
-          title = _title
-      }
-  }
-}
-ghost = factory_movie('Ghost in the shell');
-matrix = factory_movie('Matrix');
+const something = {
+  age: 10,
+  speak: function () {
+    console.log(this.age);
+  },
+};
 
-console.log(ghost.get_title()); //Ghost in the shell
-console.log(matrix.get_title()); //Matrix
+const butler = {
+  age: 20,
+  serve: function (cb) {
+    cb();
+  },
+};
 
-ghost.set_title('공각기동대');
-
-console.log(ghost.get_title()); //공각기동대
-console.log(matrix.get_title()); //Matrix
+butler.serve(something.speak);
