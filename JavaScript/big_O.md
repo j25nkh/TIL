@@ -12,12 +12,12 @@
 
 > 자료구조 별 시간복잡도
 
-| - | stack | Queue | Linked List| Array | Hash Table |
-|---|---|---|---|---|---|
-| - |Last-in First-out| First-in First-out|-|-|-|
-| Insertion | O(1) | O(1) | O(1) | O(n) | O(1) |
-| Deletion | O(1) | O(1) | O(1) | O(n) | O(1) |
-| Search | O(n) | O(n) | O(n) | O(1) | O(1) |
+| - | stack | Queue | Linked List| Array | Hash Table | Tree |
+|---|---|---|---|---|---|---|
+| - |Last-in First-out| First-in First-out|-|-|-|-|
+| Insertion | O(1) | O(1) | O(1) | O(n) | O(1) | O(log n) |
+| Deletion | O(1) | O(1) | O(1) | O(n) | O(1) | O(log n) |
+| Search | O(n) | O(n) | O(n) | O(1) | O(1) | O(log n) |
 
 ```JavaScript
 function foo(n) {
