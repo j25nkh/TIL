@@ -18,7 +18,7 @@ d(); // !
 ### 함수표현식 - Function Expression
 - 자바스크립트 언어의 특징을 이용한 선언방식으로 `호이스팅에 영향을 받지 않음`
 - Hoisting이 이루어지지 않아 코딩시 `배치순서`가 필수
-- `클로져`나 `콜백`으로 유용하게 사용이 가능하다는 장점이 있음
+- [클로져](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)나 `콜백`으로 유용하게 사용이 가능하다는 장점이 있음
     
 ```JavaScript
 d(); // error
@@ -29,26 +29,6 @@ let d = function () {
 
 d(); // !
 ```
-
-# Closure (클로저) 함수
-
-- `내부함수` (inner function)에서 `외부함수` (outter fuction)의 스코프에 접근을 가능하게 해주는 것
-- 내부함수는 외부함수의 지역변수에 접근할 수 있는데, 외부함수의 실행이 끝나서 소멸된 이후 에도 외부함수의 변수에 접근이 가능함 - 클로저의 메커니즘
-- JavaScript에서 클로저는 함수가 생성될 때마다 생성
-
-```JavaScript
-function outterFunction(){
-    var print = 'sample text';  
-    
-    return function(){        
-        console.log(print);
-    }
-}
-innerFunction = outterFunction();
-innerFunction(); // sample text
-```
-
-- innerFunction에 이름없는 function이 담겼으며, 마지막 줄이 실행되었을 때 outterFunction은 실행이 끝났음으로 이 함수의 지역변수가 사라지는 것이 자연스러워 보이나, 클로저 덕분에 `접근이 가능`하였음
 
 # Callback (콜백) 함수
 
@@ -71,6 +51,42 @@ function checkGang(count, link, good) {
   }
   checkGang(2, linkGang, goodGang);  // 여기서 linkGang과 goodGang함수가 콜백함수
 ```
+
+# Recursion Function (재귀)
+
+> 스스로를 다시 부르는 행위
+
+재귀 함수를 구현할 때는 반드시 `Termination Case`가 있어야 함
+
+Life of rabbit 예제: 첫 해에는 토끼 한쌍, 토끼가 태어난 후 셋때 해부터 매해 한쌍의 토끼를 낳을 때 n해의 토끼수를 구하는 공식 (`피보나치 수열`)
+
+```JavaScript
+function rabbits(n) {
+  if (n === 0) {
+    return 0;
+  }
+
+  if (n === 1) {
+    return 1;
+  }
+
+  return rabbits(n - 1) + rabbits(n - 2);
+}
+```
+
+Factorial의 값을 구하는 예제:
+
+```JavaScript
+function factorial(n) {
+  if (n === 0) {
+    return 1;
+  }
+  return n = n * factorial(n - 1);
+}
+
+// factorial(5) = 120
+```
+
 
 
 
