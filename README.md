@@ -21,7 +21,7 @@
 * [010. Closure (클로저)](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)
 * [011. This](https://github.com/j25nkh/TIL/blob/master/JavaScript/this.md)
 * [012. Prototype (프로토타입)](https://github.com/j25nkh/TIL/blob/master/JavaScript/prototype.md)
->
+> Data Structure [(visualization)](https://www.bigocheatsheet.com/)
 * [013. Big O](https://github.com/j25nkh/TIL/blob/master/JavaScript/big_O.md)
 * [014. Linked List (연결리스트)](https://github.com/j25nkh/TIL/blob/master/JavaScript/linked_list.md)
 * [015. Hash Table (해시테이블)](https://github.com/j25nkh/TIL/blob/master/JavaScript/hash_table.md)

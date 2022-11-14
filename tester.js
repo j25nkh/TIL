@@ -1,15 +1,10 @@
-const something = {
-  age: 10,
-  speak: function () {
-    console.log(this.age);
-  },
-};
+const nums = [1,2,3,4,5];
 
-const butler = {
-  age: 20,
-  serve: function (cb) {
-    cb();
-  },
-};
+let oddNums = nums.reduce(function(accumulator, currentValue){
+  if(currentValue % 2) {
+    accumulator.push(currentValue);
+  }
+  return accumulator;
+},[])
 
-butler.serve(something.speak);
+console.log(oddNums); // [1, 3, 5]
