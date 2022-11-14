@@ -77,7 +77,7 @@ function factorial(n) {
   - 반환 값으로 사용할 수 있거나
   - 변수에 할당될 수 있거나 자료구조에 저장될 수 있거나
 
-# Higher Order Function (고차함수)
+### Higher Order Function (고차함수)
 
 - 일반함수 (일차원함수): 인자로 함수를 받지 않고 함수를 반환하지도 않음
 - 고차함수: 인자로 함수를 받거나 (`Callback`), 함수를 리턴하는 함수
@@ -117,4 +117,37 @@ repeat(5, console.log);
 repeat(10, window.alert);
 repeat(20, console.warn);
 ```
+
+# Pure Function (순수함수)
+
+1. 동일한 매개변수가 주어지면 항상 같은 결과를 반환하는 함수
+2. `Side Effect`가 없는 함수
+- 외부로부터 독립된 `블록`형태
+- 함수는 외부 요인과 소통하는 상황이 많음 (파일시스템 변경, 데이터베이스에 기록, http 등등)
+- 외부 요인이 변해도 결괏값이 변하지 않은, side effect가 없는 것이 순수 함수
+- 순수함수가 무조건 옳은 것은 아니나, 순수함수가 많을 수록 예상치 못한 상황을 더 잘 대처할 수 있음
+
+```JavaScript
+// 순수함수
+function pureAdd(number1, number2) {
+  return number1 + number2;
+};
+
+console.log(pureAdd(1,1)); //2
+console.log(pureAdd(1,1)); //2
+```
+
+```JavaScript
+let extVar = 0;
+
+// 순수하지 않은 함수
+function impureAdd(number1, number2) {
+  return number1 + number2 + extVar;
+};
+console.log(impureAdd(1,1)); //2
+
+extVar = 1;
+console.log(impureAdd(1,1)); //3
+```
+
 

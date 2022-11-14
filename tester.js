@@ -1,10 +1,10 @@
-const nums = [1,2,3,4,5];
+let extVar = 0;
 
-let oddNums = nums.reduce(function(accumulator, currentValue){
-  if(currentValue % 2) {
-    accumulator.push(currentValue);
-  }
-  return accumulator;
-},[])
+// 순수하지 않은 함수
+function impureAdd(number1, number2) {
+  return number1 + number2 + extVar;
+};
+console.log(impureAdd(1,1)); //2
 
-console.log(oddNums); // [1, 3, 5]
+extVar = 1;
+console.log(impureAdd(1,1)); //3
