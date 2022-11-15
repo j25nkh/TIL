@@ -26,6 +26,8 @@
 * [014. Linked List (연결리스트)](https://github.com/j25nkh/TIL/blob/master/JavaScript/linked_list.md)
 * [015. Hash Table (해시테이블)](https://github.com/j25nkh/TIL/blob/master/JavaScript/hash_table.md)
 * [016. Tree (트리)](https://github.com/j25nkh/TIL/blob/master/JavaScript/tree.md)
+>Algorithm
+* [017. Sorting Algorithm (정렬 알고리즘)](https://github.com/j25nkh/TIL/blob/master/JavaScript/sorting.md)
 
 ## Chrome
 * [001. Debugging (디버깅)](https://github.com/j25nkh/TIL/blob/master/Chrome/debugging.md)

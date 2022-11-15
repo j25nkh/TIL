@@ -1,11 +1,13 @@
 # 선언식 vs. 표현식
 
+- [참고자료](https://joshua1988.github.io/web-development/javascript/function-expressions-vs-declarations/)
 - 자바스크립트는 ()가 있어야만 함수를 호출
 
 ### 함수선언식 - Function Declaration
 
 - 일반적인 프로그래밍 언어와 같은 함수 선언방식
 - 최상위로 hoisting 되기 때문에 순서 배치가 자유로움
+- ES6 `화살표함수`는 선언식에서 X
     
 ```JavaScript
 d(); // !
@@ -20,6 +22,12 @@ d(); // !
 ### 함수표현식 - Function Expression
 - 자바스크립트 언어의 특징을 이용한 선언방식으로 `호이스팅에 영향을 받지 않음`
 - Hoisting이 이루어지지 않아 코딩시 `배치순서`가 필수
+- ES6 `화살표함수` 적용가능
+
+```JavaScript
+const func = (x, y) => console.log(x + y);
+func(1,3); // 4
+``` 
 
 ```JavaScript
 d(); // error
@@ -165,6 +173,25 @@ console.log(impureAdd(1,1)); //2
 
 extVar = 1;
 console.log(impureAdd(1,1)); //3
+```
+
+Side Effect를 함수에서 없애는 예제:
+
+```JavaScript
+// 기존
+function func(arr) {
+  arr.push(0);
+
+  return arr;
+}
+
+// Side Effect 제거 후
+function func(arr) {
+  const newArr = [...arr];
+  newArr.push(2);
+
+  return newArr;
+}
 ```
 
 
