@@ -8,7 +8,7 @@
 - Closure는 `garbage collector`에 의해 정리되지 않기 때문에, 성능저하나 메모리 누수의 가장 흔한 원인
 
 ```JavaScript
-function outterFunction(){
+function outterFunction () {
     var count = 0;  
     
     function log () {

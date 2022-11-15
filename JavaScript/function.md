@@ -1,5 +1,7 @@
 # 선언식 vs. 표현식
 
+- 자바스크립트는 ()가 있어야만 함수를 호출
+
 ### 함수선언식 - Function Declaration
 
 - 일반적인 프로그래밍 언어와 같은 함수 선언방식
@@ -18,8 +20,7 @@ d(); // !
 ### 함수표현식 - Function Expression
 - 자바스크립트 언어의 특징을 이용한 선언방식으로 `호이스팅에 영향을 받지 않음`
 - Hoisting이 이루어지지 않아 코딩시 `배치순서`가 필수
-- [클로져](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)나 `콜백`으로 유용하게 사용이 가능하다는 장점이 있음
-    
+
 ```JavaScript
 d(); // error
 
@@ -28,6 +29,22 @@ let d = function () {
 }
 
 d(); // !
+``` 
+
+- [클로져](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)나 `콜백`으로 유용하게 사용이 가능하다는 장점이 있음 (변수 안에 담아서 다른 함수의 매개변수로 사용)
+
+```JavaScript
+//클로저 이용
+function outerFunc(val) {
+  const innerFunc = function () { //함수표현식
+    console.log(val);
+  }
+
+  return innerFunc;
+}
+
+innnerFunction = outerFunc('log this');
+innnerFunction(); //log this
 ``` 
 
 
