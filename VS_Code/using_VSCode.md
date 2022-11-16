@@ -24,4 +24,6 @@
 ### 변수명 한번에 바꾸기
  - F2
 
-
+### 출력창에 Object의 내용이 일부만 표시될 때 
+ - console.log(myObject) 대신
+ - console.log(JSON.stringify(myObject));
