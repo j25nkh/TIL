@@ -91,7 +91,7 @@ LinkedList.prototype.insert = function(location, value) {
     }
   
     // 3. 그 외의 경우, Head 부터 삽입위치까지 타고 타고 이동
-    while(locationIndex < location) {
+    while (locationIndex < location) {
       preNode = postNode;
       postNode = postNode.next;
       locationIndex ++;
@@ -129,7 +129,7 @@ LinkedList.prototype.remove = function(locationFront) {
     }
   
     // 2. 그 외의 경우, Head 부터 삭제노드의 "앞" 위치까지 타고 타고 이동
-    while(locationIndex < locationFront) {
+    while (locationIndex < locationFront) {
       preNode = postNode;
       postNode = postNode.next;
       locationIndex ++;
@@ -165,7 +165,7 @@ LinkedList.prototype.isContain = function(value) {
   let currentNode = this.head;
   let locationIndex = 0;
   
-  while(locationIndex < this.length) {
+  while (locationIndex < this.length) {
     if (currentNode.value === value) {
       return true;
     }
@@ -189,7 +189,7 @@ LinkedList.prototype.indexOf = function(value) {
   let currentNode = this.head;
   let locationIndex = 0;
   
-  while(locationIndex < this.length) {
+  while (locationIndex < this.length) {
     if (currentNode.value === value) {
       return locationIndex + 1;
     }
