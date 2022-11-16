@@ -1,2 +1,5 @@
-const func = (x, y) => console.log(x + y);
-func(1,3);
+let number = 3.2;
+
+Number.isInteger(3.2) 
+    ? console.log("정수") 
+    : console.log("정수아님");

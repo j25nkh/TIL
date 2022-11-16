@@ -17,3 +17,14 @@
     - var func = function () {...}`;`
 - {} 닫힌 후 사용 X (오브젝트 선언 예외)
     - function func () {}
+- 함수표현식은 변수에 할당하는 명령문으로 `;`가 붙음
+
+```JavaScript
+// 선언식
+funciton foo() {}
+
+// 표현식
+const foo = function() {};
+```
+
+

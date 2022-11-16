@@ -73,4 +73,15 @@ var b = a--; // a = 0, b = 1
 var b = --a; // a = 0, b = 0
 ```
 
+# Ternary Operator (삼항연산자)
+
+> condition ? expressionIfTrue : expressionIfFalse
+
+```JavaScript
+Number.isInteger(3.12) 
+    ? console.log("정수") 
+    : console.log("정수아님"); // 정수아님
+```
+
+
 
