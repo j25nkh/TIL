@@ -1,5 +1,7 @@
 # TIL
 
+> 내가 보려고 만든 노트
+
 > Archive of notes gernerated in the process of lifelong learing, `since 2022.09`.
 
 ---

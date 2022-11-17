@@ -20,10 +20,20 @@
 
 1. 상단 탭 우클릭 → open preview
 
+### 불필요한 space를 추적하는 extension
+
+ - trailing-spaces
+
+### 파일의 끝 new line 자동추가
+
+ - vscode에서 설정창 열기 (맥이라면 command + , 윈도우라면 Ctrl + ,)
+ - 검색 창에 insert final newline 검색
+ - 나오는 설정 값에 체크
+
 
 ### 변수명 한번에 바꾸기
  - F2
 
-### 출력창에 Object의 내용이 일부만 표시될 때 
+### 출력창에 Object의 내용이 일부만 표시될 때
  - console.log(myObject) 대신
  - console.log(JSON.stringify(myObject));

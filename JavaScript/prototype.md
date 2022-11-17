@@ -6,7 +6,8 @@
 - 원래 `return`을 명시 하지 않는 함수를 반환값이 없으나, `생성자 함수는 기본으로 빈 객체를 만들어, 그 안에 this를 넣어 반환`함.
 - 생성자 함수가 반환해주는 빈 객체는 흔히 `instance`라고 부름
 - 만약 `객체`를 리턴하면 this를 리턴하지 않음, 그 외를 리턴할 시 그대로 `this`를 리턴
-- 일반적인 상황에서 생성자 함수를 사용할 시 `return`을 쓰지 않고, `this`를 리턴해서 사용
+- 따라서 일반적인 상황에서 생성자 함수를 사용할 시 `return`을 쓰지 않음 (`this`를 리턴하기 위해)
+- `new` 키워드를 사용하는 것이 생성자 함수패턴이라면, 아닌것은 [`팩토리 함수`패턴](https://goddino.tistory.com/136)이라고 부름
 - 아래의 예제에서 `new`가 없었다면 반환값이 없음
 
 ```JavaScript
@@ -200,31 +201,31 @@ console.log(ken.hello); // 1
 function Animal (name) {
     this.name = name;
   }
-  
-  Animal.prototype.sleep = function () {
-    console.log("sleep");
-  };
-  
-  function Human (name, language) {
-    Animal.call(this, name); // call 메소드의 첫 인자는 this, 두 번째 인자인 name은 Animal이라는 함수가 인자를 필요로 하기 때문에 받아서 넣어준 것
-    this.language = language
-  }
-  
-  Human.prototype = Object.create(Animal.prototype);
-  // Animal.prototype이 프로토타입인 빈 객체가 Human.prototype의 프로토타입
-  
-  Human.prototype.constructor = Human;
-  // 모든 constructor (생성자함수)에 프로토타입이 존재하듯, 모든 프로토타입에도 constructor가 존재
-  // 윗 줄에서 prototype을 지정해주었기 때문에 constructor 또한 지정해주어야 함
-  
-  Human.prototype.write = function () {
-    console.log("write");
-  };
-  
-  // inheritance를 통해 Object > Animal > Human 순으로 계층이 형성
-  
-  var dog = new Animal("badooki");
-  var ken = new Human("ken", "Korean");
+
+Animal.prototype.sleep = function () {
+  console.log("sleep");
+};
+
+function Human (name, language) {
+  Animal.call(this, name); // call 메소드의 첫 인자는 this, 두 번째 인자인 name은 Animal이라는 함수가 인자를 필요로 하기 때문에 받아서 넣어준 것
+  this.language = language
+}
+
+Human.prototype = Object.create(Animal.prototype);
+// Animal.prototype이 프로토타입인 빈 객체가 Human.prototype의 프로토타입
+
+Human.prototype.constructor = Human;
+// 모든 constructor (생성자함수)에 프로토타입이 존재하듯, 모든 프로토타입에도 constructor가 존재
+// 윗 줄에서 prototype을 지정해주었기 때문에 constructor 또한 지정해주어야 함
+
+Human.prototype.write = function () {
+  console.log("write");
+};
+
+// inheritance를 통해 Object > Animal > Human 순으로 계층이 형성
+
+var dog = new Animal("badooki");
+var ken = new Human("ken", "Korean");
 
 console.log(dog); // Animal { name: 'badooki' }
 console.log(dog.name); // badooki​​

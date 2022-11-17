@@ -1,5 +1,3 @@
-let number = 3.2;
+const result = null === Object.prototype.__proto__;
 
-Number.isInteger(3.2) 
-    ? console.log("정수") 
-    : console.log("정수아님");
+console.log(result);
