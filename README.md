@@ -47,4 +47,4 @@
 * [004. [JavaScript] DOM Element](https://github.com/j25nkh/TIL/blob/master/Webpage_interaction/DOM_element.md)
 
 ## Trouble Shooting
-* [001. Using VS Code](https://github.com/j25nkh/TIL/blob/master/Troubleshooting/trouble_shooting.md)
+* [001. Trouble Shooting](https://github.com/j25nkh/TIL/blob/master/Troubleshooting/trouble_shooting.md)
