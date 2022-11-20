@@ -4,6 +4,8 @@
 
 > Archive of notes gernerated in the process of lifelong learing, `since 2022.09`.
 
+- all git migration test in progress...
+
 ---
 
 ## JavaScript
