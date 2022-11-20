@@ -4,8 +4,6 @@
 
 > Archive of notes gernerated in the process of lifelong learing, `since 2022.09`.
 
-- all git migration test in progress...
-
 ---
 
 ## JavaScript
@@ -49,4 +47,4 @@
 * [004. [JavaScript] DOM Element](https://github.com/j25nkh/TIL/blob/master/Webpage_interaction/DOM_element.md)
 
 ## Trouble Shooting
-* [001. Using VS Code](https://github.com/j25nkh/TIL/blob/master/VS_Code/trouble_shooting.md)
+* [001. Using VS Code](https://github.com/j25nkh/TIL/blob/master/Troubleshooting/trouble_shooting.md)
