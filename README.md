@@ -18,18 +18,19 @@
 * [006. Method (for string)](https://github.com/j25nkh/TIL/blob/master/JavaScript/method_string.md)
 * [007. Method (for array)](https://github.com/j25nkh/TIL/blob/master/JavaScript/method_array.md)
 * [008. Shallow Copy (얕은복사)](https://github.com/j25nkh/TIL/blob/master/JavaScript/shallow_copy.md)
+* [009. Arguments 객체](https://github.com/j25nkh/TIL/blob/master/JavaScript/arguments.md)
 >
-* [009. Function (함수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/function.md)
-* [010. Closure (클로저)](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)
-* [011. This](https://github.com/j25nkh/TIL/blob/master/JavaScript/this.md)
-* [012. Prototype (프로토타입)](https://github.com/j25nkh/TIL/blob/master/JavaScript/prototype.md)
+* [010. Function (함수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/function.md)
+* [011. Closure (클로저)](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)
+* [012. This](https://github.com/j25nkh/TIL/blob/master/JavaScript/this.md)
+* [013. Prototype (프로토타입)](https://github.com/j25nkh/TIL/blob/master/JavaScript/prototype.md)
 > Data Structure [(visualization)](https://www.bigocheatsheet.com/)
-* [013. Big O](https://github.com/j25nkh/TIL/blob/master/JavaScript/big_O.md)
-* [014. Linked List (연결리스트)](https://github.com/j25nkh/TIL/blob/master/JavaScript/linked_list.md)
-* [015. Hash Table (해시테이블)](https://github.com/j25nkh/TIL/blob/master/JavaScript/hash_table.md)
-* [016. Tree (트리)](https://github.com/j25nkh/TIL/blob/master/JavaScript/tree.md)
+* [014. Big O](https://github.com/j25nkh/TIL/blob/master/JavaScript/big_O.md)
+* [015. Linked List (연결리스트)](https://github.com/j25nkh/TIL/blob/master/JavaScript/linked_list.md)
+* [016. Hash Table (해시테이블)](https://github.com/j25nkh/TIL/blob/master/JavaScript/hash_table.md)
+* [017. Tree (트리)](https://github.com/j25nkh/TIL/blob/master/JavaScript/tree.md)
 >Algorithm
-* [017. Sorting Algorithm (정렬 알고리즘)](https://github.com/j25nkh/TIL/blob/master/JavaScript/sorting.md)
+* [018. Sorting Algorithm (정렬 알고리즘)](https://github.com/j25nkh/TIL/blob/master/JavaScript/sorting.md)
 
 ## Chrome
 * [001. Debugging (디버깅)](https://github.com/j25nkh/TIL/blob/master/Chrome/debugging.md)
