@@ -1,3 +1,10 @@
-const result = null === Object.prototype.__proto__;
+function timer(i) {
+	setTimeout(function() {
+		console.log(i);
+	}, i * 1000);
+}
 
-console.log(result);
+for (i = 1; i < 6; i++) {
+	timer(i);
+}
+
