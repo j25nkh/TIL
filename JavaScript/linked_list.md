@@ -2,7 +2,7 @@
 
 > Node의 연결로서, Node는 Data와 Pointer로 구성
 
-> 각 Node의들이 다른 Node의를 참조하며, 이를 link라고 함
+> 각 Node의들이 다른 Node를 참조하며, 이를 link라고 함
 
 > [참고차료 (opentutorials.org)](https://opentutorials.org/module/1335/8821)
 
