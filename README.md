@@ -8,7 +8,7 @@
 
 ## JavaScript
 
-* [000. Coding Convention](https://github.com/j25nkh/TIL/blob/master/JavaScript/style.md)
+* [000. Coding Convention](https://github.com/j25nkh/TIL/blob/master/JavaScript/convention.md)
 >
 * [001. Variable (변수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/variable.md)
 * [002. Falsiness & Truthiness](https://github.com/j25nkh/TIL/blob/master/JavaScript/falsiness.md)

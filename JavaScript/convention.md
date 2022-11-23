@@ -29,4 +29,7 @@ funciton foo() {}
 const foo = function() {};
 ```
 
+### 주석사용
+
+- [참조](https://ko.javascript.info/comments)
 
