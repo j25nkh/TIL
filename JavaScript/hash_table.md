@@ -161,30 +161,30 @@ let hashtable = new HashTable(8);
 hashtable.insert("Jake", "Jeon");
 hashtable.insert("George", "Washington");
 hashtable.insert("George", "Bush");
-
 hashtable.insert("John", "Adams");
-// hashtable.insert("Thomas", "Jefferson");
-// hashtable.insert("James", "Madison");
-// hashtable.insert("John", "Adams");
-// hashtable.insert("Andrew", "Jackson");
-// hashtable.insert("Martin", "Buren");
-// hashtable.insert("William", "Harrison");
-// hashtable.insert("John", "Tyler");
-// hashtable.insert("Zachary", "Taylor");
-// hashtable.insert("Millard", "Fillmore");
-// hashtable.insert("Franklin", "Pierce");
-// hashtable.insert("Abraham", "Lincoln");
-// hashtable.insert("Ulysses", "Grant");
-// hashtable.insert("Rutherford", "Hayes");
-// hashtable.insert("Chester", "Arthur");
-// hashtable.insert("Grover", "Cleveland");
-// hashtable.insert("Benjamin", "Cleveland");
-
-// hashtable.remove("George");
 
 console.log(hashtable.table);
-console.log(hashtable.dataSize);
-console.log(hashtable.retrieve("Jake"));
+// [ ,
+//   ,
+//   ,
+//   LinkedList { length: 1,
+//     head: Node { key: 'Jake', value: 'Jeon', next: null },
+//     tail: Node { key: 'Jake', value: 'Jeon', next: null } },
+//   ,
+//   ,
+//   ,
+//   LinkedList { length: 3,
+//     head:
+//      Node { key: 'John',
+//        value: 'Adams',
+//        next:
+//         Node { key: 'George',
+//           value: 'Bush',
+//           next: Node { key: 'George', value: 'Washington', next: null } } },
+//     tail: Node { key: 'George', value: 'Washington', next: null } } ]
+
+console.log(hashtable.dataSize); // 4
+console.log(hashtable.retrieve("Jake")); // Jeon
 ```
 
 ### Open Address 방식
@@ -319,39 +319,43 @@ HashTable.prototype.remove = function (key) {
 	}
 }
 
-
 let hashtable = new HashTable();
 hashtable.insert("Jake", "Jeon");
 hashtable.insert("George", "Washington");
 hashtable.insert("John", "Adams");
 hashtable.insert("Thomas", "Jefferson");
 hashtable.insert("James", "Madison");
-hashtable.insert("John", "Adams");
-hashtable.insert("Andrew", "Jackson");
-hashtable.insert("Martin", "Buren");
-hashtable.insert("William", "Harrison");
-hashtable.insert("John", "Tyler");
-hashtable.insert("Zachary", "Taylor");
-hashtable.insert("Millard", "Fillmore");
-hashtable.insert("Franklin", "Pierce");
-hashtable.insert("Abraham", "Lincoln");
-hashtable.insert("Ulysses", "Grant");
-hashtable.insert("Rutherford", "Hayes");
-hashtable.insert("Chester", "Arthur");
-hashtable.insert("Grover", "Cleveland");
-hashtable.insert("Benjamin", "Cleveland");
-
 console.log(hashtable.table);
-console.log(hashtable.bucketCount + "/" + hashtable.limit + " occupied");
-
-hashtable.remove("Franklin");
-
-console.log(hashtable.table);
-console.log(hashtable.bucketCount + "/" + hashtable.limit + " occupied");
-
-
-console.log(hashtable.retrieve("George"));
+// [ [ 'James', 'Madison' ],
+//   ,
+//   ,
+//   ,
+//   [ 'Thomas', 'Jefferson' ],
+//   ,
+//   ,
+//   [ 'George', 'Washington' ],
+//   ,
+//   ,
+//   ,
+//   [ 'Jake', 'Jeon' ],
+//   ,
+//   ,
+//   ,
+//   [ 'John', 'Adams' ] ]
+console.log(hashtable.bucketCount + "/" + hashtable.limit + " occupied"); // 5/16 occupied
+console.log(hashtable.retrieve("George")); // Washington
 
 hashtable.remove("George");
-console.log(hashtable.retrieve("George"));
+console.log(hashtable.table);
+// [ [ 'James', 'Madison' ],
+//   ,
+//   ,
+//   [ 'Jake', 'Jeon' ],
+//   [ 'Thomas', 'Jefferson' ],
+//   ,
+//   ,
+//   [ 'John', 'Adams' ] ]
+
+console.log(hashtable.bucketCount + "/" + hashtable.limit + " occupied"); // 4/8 occupied​​
+console.log(hashtable.retrieve("George")); //George not found in hash table. 
 ```
