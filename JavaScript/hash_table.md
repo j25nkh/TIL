@@ -33,14 +33,161 @@
         - 최악의 경우 데이터가 한 버킷에 들어가면 `O(n)`에 가까워짐
         - 데이터의 개수가 버킷수에 비해 너무 그렇게 크지 않음 (2~3배) `O(1)`에 가까워짐
 - 셀프 구현 로직:
-    - [x] insert(`key`, `value`): key를 해시함수에 매핑하여 얻은 hash value에 key와 value를 저장
-    - [x] retrieve(`key`): key를 해시함수에 매핑하여 얻은 hash value에 저장된 key와 value를 꺼내기
-    - [x] remove(`key`): key를 해시함수에 매핑하여 얻은 hash value에 저장된 값을 제거
-    - [x] collision control: 해시테이블 충돌방지 메커니즘
-    - [x] resizing: 해시테이블이 일정량 채워지거나 비워졌을때 크기를 조정
+    - [x] insert(`key`, `value`): key를 해시함수에 매핑하여 얻은 hash value에 key와 value를 `linked list`를 통해 저장
+    - [x] retrieve(`key`): key를 해시함수에 매핑하여 얻은 hash value에 저장된 key와 value를  `linked list`에서 꺼내기
+    - [x] remove(`key`): key를 해시함수에 매핑하여 얻은 hash value에 저장된 값을  `linked list`에서 제거
 
+```JavaScript
+function HashTable (max) {
+	this.limit = max;
+	this.table = Array(this.limit);
+	this.dataSize = 0;
+}
 
-### Open Addressing 방식
+function HashFunction(str, max) {
+	let hash = 0;
+
+	for (let i = 0; i < str.length; i++) {
+		hash = (hash << 5) + hash + str.charCodeAt(i);
+		hash = hash & hash; // Convert to 32bit integer
+		hash = Math.abs(hash);
+	}
+
+	return hash % max;
+};
+
+function LinkedList() {
+	this.length = 0;
+	this.head = null;
+	this.tail = null;
+}
+
+function Node(key, value) {
+	this.key = key;
+	this.value = value;
+	this.next = null;
+}
+
+HashTable.prototype.insert = function (key, value) {
+	let hashValue = HashFunction(key, this.limit);
+
+	// 해당 인덱스에 정보가 없으면 linked list 생성
+	if (!this.table[hashValue]) {
+		this.table[hashValue] = new LinkedList();
+	}
+
+	// 새로운 Node 생성
+	let list = this.table[hashValue];
+	const newNode = new Node(key, value);
+
+	// 1. 연결리스트가 비어있다면 newNode가 head와 tail
+	if (!list.head) {
+		list.head = newNode;
+		list.tail = newNode;
+		list.length++;
+		this.dataSize++;
+
+		return;
+	}
+
+	// 2. head에 새로운 Node 추가
+	newNode.next = list.head;
+	list.head = newNode;
+	list.length++;
+	this.dataSize++;
+}
+
+HashTable.prototype.retrieve = function (key) {
+	let hashValue = HashFunction(key, this.limit);
+
+	let list = this.table[hashValue];
+	let currentNode = list.head;
+
+	// 해당 index의 Linked list를 head부터 탐색
+	while (currentNode) {
+    if (currentNode.key === key) {
+      return currentNode.value;
+    }
+
+    currentNode = currentNode.next;
+    locationIndex ++;
+  }
+
+	return key + " not found in hash table."
+}
+
+HashTable.prototype.remove = function (key) {
+	let hashValue = HashFunction(key, this.limit);
+
+	let list = this.table[hashValue];
+	let currentNode = list.head;
+	let preNode;
+
+	// 1. 삭제 Node가 head인 경우
+	if (currentNode.key === key) {
+		list.head = currentNode.next;
+		delete currentNode;
+
+		if (!currentNode.next) {
+			list.tail = null;
+		}
+
+		list.length--;
+		this.dataSize--;
+		return;
+	}
+
+	// 2. 그 외의 경우 Node를 따라 탐색
+	while (currentNode) {
+		if (currentNode.key === key) {
+			break;
+		}
+
+		preNode = currentNode
+		currentNode = currentNode.next;
+	}
+
+	preNode.next = currentNode.next;
+	if (!currentNode.next) {
+		list.tail = preNode;
+	}
+
+	delete currentNode;
+	this.length--;
+	this.dataSize--;
+}
+
+let hashtable = new HashTable(8);
+hashtable.insert("Jake", "Jeon");
+hashtable.insert("George", "Washington");
+hashtable.insert("George", "Bush");
+
+hashtable.insert("John", "Adams");
+// hashtable.insert("Thomas", "Jefferson");
+// hashtable.insert("James", "Madison");
+// hashtable.insert("John", "Adams");
+// hashtable.insert("Andrew", "Jackson");
+// hashtable.insert("Martin", "Buren");
+// hashtable.insert("William", "Harrison");
+// hashtable.insert("John", "Tyler");
+// hashtable.insert("Zachary", "Taylor");
+// hashtable.insert("Millard", "Fillmore");
+// hashtable.insert("Franklin", "Pierce");
+// hashtable.insert("Abraham", "Lincoln");
+// hashtable.insert("Ulysses", "Grant");
+// hashtable.insert("Rutherford", "Hayes");
+// hashtable.insert("Chester", "Arthur");
+// hashtable.insert("Grover", "Cleveland");
+// hashtable.insert("Benjamin", "Cleveland");
+
+// hashtable.remove("George");
+
+console.log(hashtable.table);
+console.log(hashtable.dataSize);
+console.log(hashtable.retrieve("Jake"));
+```
+
+### Open Address 방식
 
 - 한 버킷에 한 데이터만 삽입
 - 충돌: value를 넣으려는 버킷에 이미 값이 있으면 넣을 수 있는 다른 버킷을 탐색 (probe)

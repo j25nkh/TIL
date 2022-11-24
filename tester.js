@@ -1,146 +1,147 @@
-function HashTable () {
-	this.limit = 8;
+function HashTable (max) {
+	this.limit = max;
 	this.table = Array(this.limit);
-	this.bucketCount = 0;
-  }
-  
-  function HashFunction(str, max) {
+	this.dataSize = 0;
+}
+
+function HashFunction(str, max) {
 	let hash = 0;
-  
+
 	for (let i = 0; i < str.length; i++) {
-	  hash = (hash << 5) + hash + str.charCodeAt(i);
-	  hash = hash & hash; // Convert to 32bit integer
-	  hash = Math.abs(hash);
+		hash = (hash << 5) + hash + str.charCodeAt(i);
+		hash = hash & hash; // Convert to 32bit integer
+		hash = Math.abs(hash);
 	}
-  
+
 	return hash % max;
-  };
-  
-  HashTable.prototype.insert = function (key, value) {
-	  let hashValue = HashFunction(key, this.limit);
-  
-	  // 버킷이 비어있지 않다면
-	  while (this.table[hashValue]) {
-  
-		  // key값이 같은 경우 overwrite
-		  if (this.table[hashValue][0] === key) {
-			  this.table[hashValue] = [key, value];
-  
-			  return;
-		  }
-  
-		  // key값이 다르다면 해시값을 조정 (선형탐사)
-		  hashValue  = (hashValue + 1) % 8;
-	  }
-  
-	  // 버킷이 비어있다면 데이터 삽입
-	  this.table[hashValue] = [key, value];
-	  this.bucketCount++;
-  
-	  // 테이블 반 초과 점유시 버킷크기 조정 (2배)
-	  if (this.bucketCount > this.limit / 2) {
-  
-		  this.newTable = new Array(this.limit * 2);
-		  this.limit = this.limit * 2;
-  
-		  // 확장된 해시테이블에 기존 해시함수를 통해 key, value 재할당
-		  for (i = 0; i < this.table.length; i++) {
-			  if (this.table[i]) {
-				  this.newTable[HashFunction(this.table[i][0], this.limit)] = this.table[i];
-			  }
-		  }
-  
-		  this.table = this.newTable;
-	  }
+};
+
+function LinkedList() {
+	this.length = 0;
+	this.head = null;
+	this.tail = null;
+}
+
+function Node(key, value) {
+	this.key = key;
+	this.value = value;
+	this.next = null;
+}
+
+HashTable.prototype.insert = function (key, value) {
+	let hashValue = HashFunction(key, this.limit);
+
+	// 해당 인덱스에 정보가 없으면 linked list 생성
+	if (!this.table[hashValue]) {
+		this.table[hashValue] = new LinkedList();
+	}
+
+	// 새로운 Node 생성
+	let list = this.table[hashValue];
+	const newNode = new Node(key, value);
+
+	// 1. 연결리스트가 비어있다면 newNode가 head와 tail
+	if (!list.head) {
+		list.head = newNode;
+		list.tail = newNode;
+		list.length++;
+		this.dataSize++;
+
+		return;
+	}
+
+	// 2. head에 새로운 Node 추가
+	newNode.next = list.head;
+	list.head = newNode;
+	list.length++;
+	this.dataSize++;
+}
+
+HashTable.prototype.retrieve = function (key) {
+	let hashValue = HashFunction(key, this.limit);
+
+	let list = this.table[hashValue];
+	let currentNode = list.head;
+
+	// 해당 index의 Linked list를 head부터 탐색
+	while (currentNode) {
+    if (currentNode.key === key) {
+      return currentNode.value;
+    }
+
+    currentNode = currentNode.next;
+    locationIndex ++;
   }
-  
-  HashTable.prototype.retrieve = function (key) {
-	  let hashValue = HashFunction(key, this.limit)
-  
-	  // 버킷이 비어있지 않다면
-	  while (this.table[hashValue]) {
-  
-		  // key값이 같은 경우 return
-		  if (this.table[hashValue][0] === key) {
-			  return this.table[hashValue][1];
-		  }
-  
-		  // key값이 다르다면 해시값을 조정 (선형탐사)
-		  hashValue  = (hashValue + 1) % 8;
-	  }
-  
-	  // 버킷이 비어있다면 탐사 종료
-	  return key + " not found in hash table."
-  }
-  
-  HashTable.prototype.remove = function (key) {
-	  let hashValue = HashFunction(key, this.limit)
-  
-	  // 버킷이 비어있지 않다면
-	  while (this.table[hashValue]) {
-  
-		  // key값이 같은 경우 delete
-		  if (this.table[hashValue][0] === key) {
-			  delete this.table[hashValue];
-			  this.bucketCount--;
-  
-			  break;
-		  }
-  
-		  // key값이 다르다면 해시값을 조정 (선형탐사)
-		  hashValue  = (hashValue + 1) % 8;
-	  } 
-	  // 버킷이 비어있다면 탐사 종료
-  
-	  // 테이블 반 이하 점유시 버킷크기 조정 (1/2배)
-	  if (this.bucketCount <= (this.limit / 4) && this.limit >= 8) {
-  
-		  this.newTable = new Array(this.limit * 0.5);
-		  this.limit = this.limit * 0.5;
-  
-		  // 확장된 해시테이블에 기존 해시함수를 통해 key, value 재할당
-		  for (i = 0; i < this.table.length; i++) {
-			  if (this.table[i]) {
-				  this.newTable[HashFunction(this.table[i][0], this.limit)] = this.table[i];
-			  }
-		  }
-  
-		  this.table = this.newTable;
-	  }
-  }
-  
-  
-  let hashtable = new HashTable();
-  hashtable.insert("Jake", "Jeon");
-  hashtable.insert("George", "Washington");
-  hashtable.insert("John", "Adams");
-  hashtable.insert("Thomas", "Jefferson");
-  hashtable.insert("James", "Madison");
-  hashtable.insert("John", "Adams");
-  hashtable.insert("Andrew", "Jackson");
-  hashtable.insert("Martin", "Buren");
-  hashtable.insert("William", "Harrison");
-  hashtable.insert("John", "Tyler");
-  hashtable.insert("Zachary", "Taylor");
-  hashtable.insert("Millard", "Fillmore");
-  hashtable.insert("Franklin", "Pierce");
-  hashtable.insert("Abraham", "Lincoln");
-  hashtable.insert("Ulysses", "Grant");
-  hashtable.insert("Rutherford", "Hayes");
-  hashtable.insert("Chester", "Arthur");
-  hashtable.insert("Grover", "Cleveland");
-  hashtable.insert("Benjamin", "Cleveland");
-  
-  console.log(hashtable.table);
-  console.log(hashtable.bucketCount + "/" + hashtable.limit + " occupied");
-  
-  hashtable.remove("Franklin");
-  
-  console.log(hashtable.table);
-  console.log(hashtable.bucketCount + "/" + hashtable.limit + " occupied");
-  
-  
-  console.log(hashtable.retrieve("George"));
-  
-  hashtable.remove("George");
-  console.log(hashtable.retrieve("George"));
+
+	return key + " not found in hash table."
+}
+
+HashTable.prototype.remove = function (key) {
+	let hashValue = HashFunction(key, this.limit);
+
+	let list = this.table[hashValue];
+	let currentNode = list.head;
+	let preNode;
+
+	// 1. 삭제 Node가 head인 경우
+	if (currentNode.key === key) {
+		list.head = currentNode.next;
+		delete currentNode;
+
+		if (!currentNode.next) {
+			list.tail = null;
+		}
+
+		list.length--;
+		this.dataSize--;
+		return;
+	}
+
+	// 2. 그 외의 경우 Node를 따라 탐색
+	while (currentNode) {
+		if (currentNode.key === key) {
+			break;
+		}
+
+		preNode = currentNode
+		currentNode = currentNode.next;
+	}
+
+	preNode.next = currentNode.next;
+	if (!currentNode.next) {
+		list.tail = preNode;
+	}
+
+	delete currentNode;
+	this.length--;
+	this.dataSize--;
+}
+
+let hashtable = new HashTable(8);
+hashtable.insert("Jake", "Jeon");
+hashtable.insert("George", "Washington");
+hashtable.insert("George", "Bush");
+
+hashtable.insert("John", "Adams");
+// hashtable.insert("Thomas", "Jefferson");
+// hashtable.insert("James", "Madison");
+// hashtable.insert("John", "Adams");
+// hashtable.insert("Andrew", "Jackson");
+// hashtable.insert("Martin", "Buren");
+// hashtable.insert("William", "Harrison");
+// hashtable.insert("John", "Tyler");
+// hashtable.insert("Zachary", "Taylor");
+// hashtable.insert("Millard", "Fillmore");
+// hashtable.insert("Franklin", "Pierce");
+// hashtable.insert("Abraham", "Lincoln");
+// hashtable.insert("Ulysses", "Grant");
+// hashtable.insert("Rutherford", "Hayes");
+// hashtable.insert("Chester", "Arthur");
+// hashtable.insert("Grover", "Cleveland");
+// hashtable.insert("Benjamin", "Cleveland");
+
+// hashtable.remove("George");
+
+console.log(hashtable.table);
+console.log(hashtable.dataSize);
+console.log(hashtable.retrieve("Jake"));
