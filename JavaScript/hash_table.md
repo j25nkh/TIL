@@ -32,12 +32,12 @@
         - n = 해당 버킷의 노드 수
         - 최악의 경우 데이터가 한 버킷에 들어가면 `O(n)`에 가까워짐
         - 데이터의 개수가 버킷수에 비해 너무 그렇게 크지 않음 (2~3배) `O(1)`에 가까워짐
-셀프 구현 로직:
-- [x] insert(`key`, `value`): key를 해시함수에 매핑하여 얻은 hash value에 key와 value를 저장
-- [x] retrieve(`key`): key를 해시함수에 매핑하여 얻은 hash value에 저장된 key와 value를 꺼내기
-- [x] remove(`key`): key를 해시함수에 매핑하여 얻은 hash value에 저장된 값을 제거
-- [x] collision control: 해시테이블 충돌방지 메커니즘
-- [x] resizing: 해시테이블이 일정량 채워지거나 비워졌을때 크기를 조정
+- 셀프 구현 로직:
+    - [x] insert(`key`, `value`): key를 해시함수에 매핑하여 얻은 hash value에 key와 value를 저장
+    - [x] retrieve(`key`): key를 해시함수에 매핑하여 얻은 hash value에 저장된 key와 value를 꺼내기
+    - [x] remove(`key`): key를 해시함수에 매핑하여 얻은 hash value에 저장된 값을 제거
+    - [x] collision control: 해시테이블 충돌방지 메커니즘
+    - [x] resizing: 해시테이블이 일정량 채워지거나 비워졌을때 크기를 조정
 
 
 ### Open Addressing 방식
@@ -53,12 +53,12 @@
     - 데이터가 테이블보다 작으면 삽입, 탐색, 삭제 모두 `O(1)`
     - 따라서 bucket이 어느정도 찾을 때 해시테이블의 크기 m 을 적절하게 늘려주고 처음부터 다시 해싱을 하는 것이 좋음
 
-셀프 구현 로직:
-- [x] insert(`key`, `value`): key를 해시함수에 매핑하여 얻은 hash value에 key와 value를 저장
-- [x] retrieve(`key`): key를 해시함수에 매핑하여 얻은 hash value에 저장된 key와 value를 꺼내기
-- [x] remove(`key`): key를 해시함수에 매핑하여 얻은 hash value에 저장된 값을 제거
-- [x] collision control: 해시테이블 충돌방지 메커니즘
-- [x] resizing: 해시테이블이 일정량 채워지거나 비워졌을때 크기를 조정
+- 셀프 구현 로직:
+    - [x] insert(`key`, `value`): key를 해시함수에 매핑하여 얻은 hash value에 key와 value를 저장
+    - [x] retrieve(`key`): key를 해시함수에 매핑하여 얻은 hash value에 저장된 key와 value를 꺼내기
+    - [x] remove(`key`): key를 해시함수에 매핑하여 얻은 hash value에 저장된 값을 제거
+    - [x] collision control: 해시테이블 충돌방지 메커니즘
+    - [x] resizing: 해시테이블이 일정량 채워지거나 비워졌을때 크기를 조정
 
 ```JavaScript
 function HashTable () {
