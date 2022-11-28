@@ -24,7 +24,6 @@ func1(1, 2, 3);
 아래의 방법을 통해 arguments를 array로 변환할 수 있음
 ```JavaScript
 function foo(a, b, c, d) {
-    var args = Array.from(arguments);
     var args = [...arguments];
 
     console.log(args); // [7, 4, 5, 1]
