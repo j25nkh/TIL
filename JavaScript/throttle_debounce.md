@@ -18,7 +18,7 @@ function throttle(func, wait) {
 
 	return function() {
 		if (!throttleOn) {
-			func(); // 1) 함수를 실행
+		  func(); // 1) 함수를 실행
 			throttleOn = true; // 2) throttle on
 
 			setTimeout(function () {
