@@ -35,6 +35,6 @@ console.log(Array.from(arrayLikeObject));
 // ['a', 'b']
 
 console.log([...arrayLikeObject]);
-// Error
+// Error occur
 ```
 
