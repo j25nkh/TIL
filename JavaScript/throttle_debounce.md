@@ -28,9 +28,3 @@ function throttle(func, wait) {
 	};
 };
 ```
-
-
-
-
-
-
