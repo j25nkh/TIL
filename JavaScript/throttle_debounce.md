@@ -17,13 +17,13 @@ function throttle(func, wait) {
   let throttleOn = false; // 처음 한번은 바로 실행되도록 throttle off
 
   return function() {
-		if (!throttleOn) {
+	  if (!throttleOn) {
 		  func(); // 1) 함수를 실행
 		  throttleOn = true; // 2) throttle on
 
 		  setTimeout(function () {
 			  throttleOn = false; // 3) wait만큼 시간이 지난 후 throttle이 off 되면서 다시 실행 가능
-			}, wait);
+		  }, wait);
 	  }
   };
 };
