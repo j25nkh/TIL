@@ -43,7 +43,7 @@
 
 ## Tools
 * [001. Git](https://github.com/j25nkh/TIL/blob/master/Tools/git.md)
-* [002. VS Code](https://github.com/j25nkh/TIL/blob/master/Tools/VSCode.md)
+* [002. VS Code](https://github.com/j25nkh/TIL/blob/master/Tools/VS_Code.md)
 * [003. Chrome](https://github.com/j25nkh/TIL/blob/master/Tools/chrome.md)
 
 
@@ -51,4 +51,4 @@
 * [001. Trouble Shooting](https://github.com/j25nkh/TIL/blob/master/Troubleshooting/trouble_shooting.md)
 
 ## Devtionary
-* [001. Devtionary](https://github.com/j25nkh/TIL/blob/master/Troubleshooting/devtionary.md)
+* [001. Devtionary](https://github.com/j25nkh/TIL/blob/master/Devtionary/devtionary.md)
