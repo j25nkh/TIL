@@ -7,6 +7,7 @@
 - 생성자 함수가 반환해주는 빈 객체는 흔히 `instance`라고 부름
 - 만약 `객체`를 리턴하면 this를 리턴하지 않음, 그 외를 리턴할 시 그대로 `this`를 리턴
 - 따라서 일반적인 상황에서 생성자 함수를 사용할 시 `return`을 쓰지 않음 (`this`를 리턴하기 위해)
+- `화살표함수`는 `생성자로 사용할 수 없음
 - `new` 키워드를 사용하는 것이 생성자 함수패턴이라면, 아닌것은 [`팩토리 함수`패턴](https://goddino.tistory.com/136)이라고 부름
 - 아래의 예제에서 `new`가 없었다면 반환값이 없음
 
@@ -140,6 +141,25 @@ function Person (name) {
 const ken = new Person("ken");
 
 console.log(ken.me); // you
+```
+
+```JavaScript
+const obj = {
+  0: 'a',
+  1: 'b',
+  length: 2
+}
+
+Object.prototype.push = Array.prototype.push;
+
+obj.push('c');
+
+// const obj = {
+//   0: 'a',
+//   1: 'b',
+//   2: 'c',
+//   length: 3
+// }
 ```
 
 ### Dunder proto (던더 프로토)

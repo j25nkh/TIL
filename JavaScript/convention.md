@@ -12,6 +12,15 @@ retrun 위는 개행
     - readability와 maintainability를 위해 순서를 중시하는 함수표현식을 추천
 - 마지막줄은 한줄만 개행
 
+### Boolean 네이밍
+
+- is나 has prefix를 넣어 변수이름만 봐도 boolean 값인지 유추 가능하도록 지정
+
+### constant (상수) 네이밍
+
+- 대문자로 된 스네이크 케이스
+- const MAX_LENGTH = 10;
+
 ### 세미콜론 사용
 
 - 명령문 이후에 사용

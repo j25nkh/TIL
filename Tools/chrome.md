@@ -1,8 +1,9 @@
 # Debugging in Chrome
 
-1. 코드에 `Debugger;` 키워드를 삽입
-2. 웹페이지 파일을 실행
-3. 크롬 개발자 도구를 열고 sources를 눌러서 scope등에서 참조
+1. 개발자도구를 열고 (F12), 콘솔에 코드 입력
+2. 코드에 `Debugger;` 키워드를 삽입
+3. 웹페이지 파일을 실행
+4. 크롬 개발자 도구를 열고 sources를 눌러서 scope등에서 참조
 
 ### Call Stack
 
