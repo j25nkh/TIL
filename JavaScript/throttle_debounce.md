@@ -14,7 +14,7 @@
 쓰로틀 구현
 ```JavaScript
 function throttle(func, wait) {
-  let throttleOn = false; // 처음 한번은 바로 실행되도록 throttle off
+	let throttleOn = false; // 처음 한번은 바로 실행되도록 throttle off
 
   return function() {
 	  if (!throttleOn) {
