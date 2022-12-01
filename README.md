@@ -21,10 +21,12 @@
 * [009. Arguments 객체](https://github.com/j25nkh/TIL/blob/master/JavaScript/arguments.md)
 >
 * [010. Function (함수)](https://github.com/j25nkh/TIL/blob/master/JavaScript/function.md)
-* [011. Throttle & Debounce](https://github.com/j25nkh/TIL/blob/master/JavaScript/throttle_debounce.md)
-* [012. Closure (클로저)](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)
-* [013. This](https://github.com/j25nkh/TIL/blob/master/JavaScript/this.md)
-* [014. Prototype (프로토타입)](https://github.com/j25nkh/TIL/blob/master/JavaScript/prototype.md)
+* [011. Closure (클로저)](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)
+* [012. This](https://github.com/j25nkh/TIL/blob/master/JavaScript/this.md)
+* [013. Prototype (프로토타입)](https://github.com/j25nkh/TIL/blob/master/JavaScript/prototype.md)
+> 기능 Self 구현
+* [014. Throttle & Debounce](https://github.com/j25nkh/TIL/blob/master/JavaScript/throttle_debounce.md)
+* [015. Memoize](https://github.com/j25nkh/TIL/blob/master/JavaScript/memoize.md)
 > Data Structure [(visualization)](https://www.bigocheatsheet.com/)
 * [015. Big O](https://github.com/j25nkh/TIL/blob/master/JavaScript/big_O.md)
 * [016. Linked List (연결리스트)](https://github.com/j25nkh/TIL/blob/master/JavaScript/linked_list.md)
