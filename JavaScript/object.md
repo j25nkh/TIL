@@ -6,14 +6,14 @@
 
 ### Notation별 차이점
 
-|Dot notation | Bracket notation |
+| Dot notation | Bracket notation |
 | --- | --- |
 | `.key` | `["key"]` |
 | object.property 의 형태로 사용 | object.['property'] 의 형태로 사용 |
 | key값이 동적으로 변할 때 사용에 한계가 있음 | key 값이 변수일 때 주로 사용 |
 | 표현의 한계 존재 | 객체에 속성값이 문자열이라면 전부 접근가능 |
 
-> [출처](https://medium.com/sjk5766/javascript-object-key-vs-object-key-%EC%B0%A8%EC%9D%B4-3c21eb49b763)
+[출처](https://medium.com/sjk5766/javascript-object-key-vs-object-key-%EC%B0%A8%EC%9D%B4-3c21eb49b763)
 ```JavaScript
 var a = {
  “a” : 1,
@@ -50,3 +50,18 @@ for (let key in person) {
 }
 ```
 - 여기서 `person[key]`는 key의 실제 속성값을 찾아주지만 `person.key`는 객체 person의 속성 key라는 `문자열`을 찾기때문에 undefined를 출력
+
+### Object Shorthand
+
+ - 사용하는 변수와 생성하려는 객체의 프로퍼티가 같다면 아래와 같이 축약이 가능
+
+ ```JavaScript
+const name = "Jake";
+const sex = "male";
+
+const obj = {name: "Jake", sex: "male"};
+const obj2 = {name, sex};
+
+console.log(obj) // {name: 'Jake', sex: 'male'}
+console.log(obj2) // {name: 'Jake', sex: 'male'}
+ ```

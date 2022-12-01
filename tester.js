@@ -1,25 +1,8 @@
-function memoizer(func){
-  const cache = {};
+const name = "Jake";
+const sex = "male";
 
-    return function (...arguments) {
-      let cacheKey = func;
+const obj = {name: "Jake", sex: "male"};
+const obj2 = {name, sex};
 
-      for (i = 0; i < arguments.length; i++) {
-        cacheKey = cacheKey + arguments;
-      }
-
-      if (!cache[cacheKey]) {
-        cache[cacheKey] = func(...arguments)
-      }
-
-      return cache[cacheKey];
-    }
-}
-
-let add = function (a, b) {
-  return a + b;
-};
-
-let memoAdd = memoize(add);
-console.log(add(1,2));
-console.log(memoize(add)(1,2));
+console.log(obj) // {name: 'Jake', sex: 'male'}
+console.log(obj2) // {name: 'Jake', sex: 'male'}

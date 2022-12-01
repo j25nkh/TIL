@@ -28,21 +28,12 @@
 * [014. Throttle & Debounce](https://github.com/j25nkh/TIL/blob/master/JavaScript/throttle_debounce.md)
 * [015. Memoize](https://github.com/j25nkh/TIL/blob/master/JavaScript/memoize.md)
 > Data Structure [(visualization)](https://www.bigocheatsheet.com/)
-* [015. Big O](https://github.com/j25nkh/TIL/blob/master/JavaScript/big_O.md)
-* [016. Linked List (연결리스트)](https://github.com/j25nkh/TIL/blob/master/JavaScript/linked_list.md)
-* [017. Hash Table (해시테이블)](https://github.com/j25nkh/TIL/blob/master/JavaScript/hash_table.md)
-* [018. Tree (트리)](https://github.com/j25nkh/TIL/blob/master/JavaScript/tree.md)
+* [016. Big O](https://github.com/j25nkh/TIL/blob/master/JavaScript/big_O.md)
+* [017. Linked List (연결리스트)](https://github.com/j25nkh/TIL/blob/master/JavaScript/linked_list.md)
+* [018. Hash Table (해시테이블)](https://github.com/j25nkh/TIL/blob/master/JavaScript/hash_table.md)
+* [019. Tree (트리)](https://github.com/j25nkh/TIL/blob/master/JavaScript/tree.md)
 >Algorithm
-* [019. Sorting Algorithm (정렬 알고리즘)](https://github.com/j25nkh/TIL/blob/master/JavaScript/sorting.md)
-
-## Chrome
-* [001. Debugging (디버깅)](https://github.com/j25nkh/TIL/blob/master/Chrome/debugging.md)
-
-## Git
-* [001. Commit](https://github.com/j25nkh/TIL/blob/master/Git/Commit.md)
-
-## VS Code
-* [001. Using VS Code](https://github.com/j25nkh/TIL/blob/master/VS_Code/using_VSCode.md)
+* [020. Sorting Algorithm (정렬 알고리즘)](https://github.com/j25nkh/TIL/blob/master/JavaScript/sorting.md)
 
 ## HTML / CSS / Webpage Interaction
 * [001. [CSS] Basic structure](https://github.com/j25nkh/TIL/blob/master/CSS/Basic_structure.md)
@@ -50,5 +41,14 @@
 * [003. [CSS] Selector (선택자)](https://github.com/j25nkh/TIL/blob/master/CSS/Selector.md)
 * [004. [JavaScript] DOM Element](https://github.com/j25nkh/TIL/blob/master/Webpage_interaction/DOM_element.md)
 
+## Tools
+* [001. Git](https://github.com/j25nkh/TIL/blob/master/Tools/git.md)
+* [002. VS Code](https://github.com/j25nkh/TIL/blob/master/Tools/VSCode.md)
+* [003. Chrome](https://github.com/j25nkh/TIL/blob/master/Tools/chrome.md)
+
+
 ## Trouble Shooting
 * [001. Trouble Shooting](https://github.com/j25nkh/TIL/blob/master/Troubleshooting/trouble_shooting.md)
+
+## Devtionary
+* [001. Devtionary](https://github.com/j25nkh/TIL/blob/master/Troubleshooting/devtionary.md)

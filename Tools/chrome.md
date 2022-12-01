@@ -1,4 +1,4 @@
-# Debugging
+# Debugging in Chrome
 
 1. 코드에 `Debugger;` 키워드를 삽입
 2. 웹페이지 파일을 실행
