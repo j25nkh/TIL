@@ -32,7 +32,7 @@
 * [017. Linked List (연결리스트)](https://github.com/j25nkh/TIL/blob/master/JavaScript/linked_list.md)
 * [018. Hash Table (해시테이블)](https://github.com/j25nkh/TIL/blob/master/JavaScript/hash_table.md)
 * [019. Tree (트리)](https://github.com/j25nkh/TIL/blob/master/JavaScript/tree.md)
-> Programming
+> 프로그래밍 패러다임
 * [020. Object Oriented Programming (객체지향 프로그래밍)](https://github.com/j25nkh/TIL/blob/master/JavaScript/object_oriented_programming.md)
 * [021. Functional Programming (함수형 프로그래밍)](https://github.com/j25nkh/TIL/blob/master/JavaScript/functional_programming.md)
 >Algorithm
