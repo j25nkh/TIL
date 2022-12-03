@@ -1,22 +1,24 @@
-function foo() {
-  return new Promise(function (resolve, reject) {
-    setTimeout(function () {
-      console.log(2);
-      reject();
-    }, 1000);
-  });
-}
-
-async function bar() {
-  try {
-    const a = await foo();
-    const b = await foo();
-    return a;
-  } catch (err) {
-    console.error(err);
+function each(list, iteratee, finalCallback) {
+  var counter = 0;
+  
+  if (list.length === 0) {
+    finalCallback();
   }
-}
 
-bar();
-// 2
-// Cannot read properties of undefined (reading 'toString') 
+  function callback() {
+    counter++;
+
+
+
+
+    if (counter === list.length) {
+      finalCallback(err);
+    }
+  }
+
+
+  for (var i = 0; i < list.length; i++) {
+    iteratee(list[i], callback);
+  }
+
+}
