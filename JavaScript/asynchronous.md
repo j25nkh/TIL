@@ -3,7 +3,7 @@
 ### 동기 / 비동기 함수 동작순서 메커니즘
 
 - 일반적 callback으로 비동기를 진행할때, return이 없음 (순서가 없기때문에 누가 누구한테 줄지 불명확)
-- 함수가 callback의 형태로 불리는거지 동기흐름처러 값을 반환해서 이어받고 추가연산을 행하는 것 자체가 불가능함
+- 함수가 callback의 형태로 불리는거지 동기 흐름처럼 값을 반환해서 이어받고 추가연산을 행하는 것 자체가 불가능함
 - JavaScript 내 비동기 함수
     - `setTimeOut`
     - `ajax` 함수
@@ -17,11 +17,11 @@
 
     ```JavaScript
     setTimeout(function foo() {
-    console.log("Serial 1");
+        console.log("Serial 1");
 
-    setTimeout(function bar() {
-        console.log("Serial 2");
-    }, 1000);
+        setTimeout(function bar() {
+            console.log("Serial 2");
+        }, 1000);
     }, 1000);
     ```
 
@@ -45,7 +45,7 @@
 ### Promise의 특징
 - 비동기 callback과 다르게 `return`을 할 수 있다는 것, `에러핸들링`이 용이하다는 것이 가장 큰 장점
 - 비동기를 간편하게 (`콜백지옥 탈출`) 처리하도록 돕는 JavaScript 내장 `오브젝트`
-- `promise는 객체`고 따라서 변수에 담을 수 있고, 따라서 `return`도 할 수 있음. 기존 callback에서 저글링 하던것과 비교하면 많은 옵션이 열리는 것.
+- `promise는 객체를 반환하는 class`고 따라서 변수에 담을 수 있고, 따라서 `return`도 할 수 있음. 기존 callback에서 저글링 하던것과 비교하면 많은 옵션이 열리는 것.
 - 객체지향 프로그래밍의 모범예
 - Promise 생성자함수는 함수를 매개변수로 받으며, 그 함수는 매개변수로 `resolve`와 `reject`라는 함수를 자동으로 사용. 정해진 기능 수행 후,
     - 성공시 `resolve` 함수를 실행
@@ -68,7 +68,7 @@
 // 출처: 바닐라코딩
 console.log(0); // 동기
 
-const p1 = new Promise(function (resolve, reject) {
+const p1 = new Promise(function (resolve, reject) { // <- 프로미스를 만드는 순간 executor 함수가 자동으로 실행, 따라서 아래 1 출력
   console.log(1); // 동기로 바로 실행
 
   setTimeout(function () {
@@ -176,3 +176,83 @@ fetchNumber
   })
   .then(num => console.log(num));
 ```
+
+```JavaScript
+// 출처: 드림코딩
+const fetchNumber = new Promise(function(resolve, reject) {
+  setTimeout(function() {
+    resolve(1);
+  }, 1000);
+});
+
+fetchNumber
+.then(function(value) {
+  return value * 2; // 2
+})
+.then(function(value) {
+  return value * 3; // 6
+})
+.then(function(value) { // 다른 비동기와 연결
+  return new Promise((resolve, reject) => {
+    setTimeout(() => resolve(value - 1), 1000);
+  });
+})
+.then(num => console.log(num));
+// 5
+```
+
+# async await
+
+###   특징
+- 비동기를 동기 코드 흐름과 유사한 형태로 편리하게 작성 가능
+- 함수 앞 `async`를 붙이면 promise의 producer 파트를 모두 대체할 수 있음
+- async 함수는 항상 `promise 객체를 반환`, 만약 return을 사용한다면 `resolve`값으로 사용됨
+- [출처: 드림코딩](https://www.youtube.com/watch?v=aoQSOZfz3vQ&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=13)
+```JavaScript
+// Promise 사용
+function fetchUser() {
+  return new Promise((resolve, reject) => {
+      resolve('Jake');
+  })
+}
+
+const user = fetchUser();
+user.then(console.log);
+console.log(user); // {'Jake'}
+```
+
+```JavaScript
+// async 사용
+async function fetchUser() {
+  return 'Jake';
+}
+
+const user = fetchUser();
+user.then(console.log);
+console.log(user); // {'Jake'}
+```
+
+- `await`은 aync가 붙은 함수 `내부`에서만 사용할 수 있음
+- `await 변수`형태로 쓰이며, 이 변수는 `promise가 할당`된 변수
+- 출처: 바닐라코딩
+```JavaScript
+// Async/Await Example #1
+const a = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    resolve(666);
+  }, 1000);
+});
+
+const b = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    resolve(777);
+  }, 1000);
+});
+
+// a, b: promise
+async function process() {
+  const result = (await a) + (await b);
+  console.log(result);
+}
+
+process();
