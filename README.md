@@ -54,9 +54,10 @@
 * [004. [JavaScript] DOM Element](https://github.com/j25nkh/TIL/blob/master/Webpage_interaction/DOM_element.md)
 
 ## Tools
-* [001. Git](https://github.com/j25nkh/TIL/blob/master/Tools/git.md)
-* [002. VS Code](https://github.com/j25nkh/TIL/blob/master/Tools/VS_Code.md)
-* [003. Chrome](https://github.com/j25nkh/TIL/blob/master/Tools/chrome.md)
+* [001. What to Install](https://github.com/j25nkh/TIL/blob/master/Tools/what_to_install.md)
+* [021. Git](https://github.com/j25nkh/TIL/blob/master/Tools/git.md)
+* [003. VS Code](https://github.com/j25nkh/TIL/blob/master/Tools/VS_Code.md)
+* [004. Chrome](https://github.com/j25nkh/TIL/blob/master/Tools/chrome.md)
 
 
 ## Trouble Shooting
