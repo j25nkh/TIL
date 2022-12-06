@@ -259,3 +259,27 @@ function findCherries(fruit) {
 
 console.log(inventory.find(findCherries)); // { name: 'cherries', quantity: 5 }
 ```
+
+# 기타 메서드
+
+### Array.prototype.some()
+
+- 만족하는게 하나라도 있으면 true 반환
+
+```JavaScript
+const array = [true, false, false];
+
+function foo(param) {
+  for (let i = 0; i < param.length; i++) {
+    if (Boolean(param[i])) return true;
+  }
+
+  return false;
+}
+
+const result1 = foo(array);
+console.log(result1); // true
+
+const result2 = array.some(item => Boolean(item));
+console.log(result2); // true
+```

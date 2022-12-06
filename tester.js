@@ -1,24 +1,16 @@
-function each(list, iteratee, finalCallback) {
-  var counter = 0;
-  
-  if (list.length === 0) {
-    finalCallback();
+const array = [true, false, false];
+
+function foo(param) {
+  for (let i = 0; i < param.length; i++) {
+    if (Boolean(param[i])) return true;
   }
 
-  function callback() {
-    counter++;
-
-
-
-
-    if (counter === list.length) {
-      finalCallback(err);
-    }
-  }
-
-
-  for (var i = 0; i < list.length; i++) {
-    iteratee(list[i], callback);
-  }
-
+  return false;
 }
+
+const result1 = foo(array);
+console.log(result1); // true
+
+const result2 = array.some(item => Boolean(item));
+console.log(result2); // true
+
