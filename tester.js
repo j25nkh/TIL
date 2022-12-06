@@ -1,16 +1,7 @@
-const array = [true, false, false];
-
-function foo(param) {
-  for (let i = 0; i < param.length; i++) {
-    if (Boolean(param[i])) return true;
+function recursion(element) {
+  if (element.value >= Node.value) {
+    element.left ? recursion(element.left) : lement.left = node;
+  } else {
+    element.left ? recursion(element.right) : lement.right = node;
   }
-
-  return false;
 }
-
-const result1 = foo(array);
-console.log(result1); // true
-
-const result2 = array.some(item => Boolean(item));
-console.log(result2); // true
-

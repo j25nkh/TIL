@@ -42,3 +42,52 @@ const foo = function() {};
 
 - [참조](https://ko.javascript.info/comments)
 
+### return과 삼항연산자를 이용한 코드 개선
+
+```JavaScript
+// 개선 전
+function recursion(element) {
+  if (element.value >= Node.value) {
+    if (!element.left) {
+      element.left = node;
+    } else {
+      recursion(element.left);
+    }
+  } else {
+    if (!element.right) {
+      element.right = node;
+    } else {
+      recursion(element.right);
+    }
+  }
+}
+
+// 개선 후
+function recursion(element) {
+  if (element.value >= Node.value) {
+    element.left ? recursion(element.left) : lement.left = node;
+  } else {
+    element.left ? recursion(element.right) : lement.right = node;
+  }
+}
+
+// even more 개선 후 
+// 기존 함수는 리턴값이 없었기 때문에 여기서 리턴은 값을 반환하긴 하지만 함수 종료의 의미로 사용
+function recursion(element) {
+  if (element.value >= Node.value) {
+    return element.left ? recursion(element.left) : lement.left = node;
+  } 
+  
+  return element.left ? recursion(element.right) : lement.right = node;
+}
+
+// 명시적인게 좋다면 아래와 같이 가능
+function recursion(element) {
+  if (element.value >= Node.value) {
+    element.left ? recursion(element.left) : lement.left = node;
+    return;
+  } 
+  
+  element.left ? recursion(element.right) : lement.right = node;
+}
+```
