@@ -61,6 +61,21 @@ if (stringOrNumberOne === 1) {
 
 > 결론은 ===을 써서 타입체킹까지 되어야 더 안정적인 코딩이 됨
 
+# 연산자 우선순위
+
+- 사칙에서 곱하기 > 더하기 처럼 우선순위가 존재
+- 같은 우선순위의 두 연산자가 마주치면 결합성을 따짐 (왼쪽에서 오른쪽으로 진행)
+- 아래 예제의 경우 array의 길이가 0이고, 5 <= 0은 false 이며, false가 0으로 바뀌어 0 < = 10이기 때문에 실행.
+- array의 길이가 6이면 이는 1로 변환되고, 1 <= 10 이기 때문에 실행.
+- 결국 array의 길이에 상관없이 실행됨.
+
+```JavaScript
+const arr = Array(0);
+if (5 <= arr.length <= 10) {
+    console.log(arr.length);
+}
+```
+
 # Increment / Decrement Operator (증감연산자)
 
 ```JavaScript
