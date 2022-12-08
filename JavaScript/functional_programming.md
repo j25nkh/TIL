@@ -3,8 +3,36 @@
 ### 함수형 프로그래밍의 3가지 특징
 
 1. `Pure Function` (순수함수): Side Effect (외부의 scope를 참조하여 데이터를 변경)가 없는 함수
+    - 동일한 input → 동일한 output
 2. `Immutability` (불변성): 한번 할당된 데이터가 변하지 않음
 3. `Referential Transparency` (참조투명성): 함수가 호출된 결과 값과 함수의 호출은 서로 동일하게 여겨져 서로 대체 가능함. 위 1, 2의 조건이 충족되는 함수는 참조투명함
+
+```JavaScript
+const cart = ["apple", "banana"];
+
+function addCart(cart, stuff) {
+  cart.push(stuff);
+  
+  return cart;
+}
+
+const cart2 = addCart(cart, "paper");
+// 당장 cart라는 배열만 바뀌어도 결과값이 바뀌기 때문에 addCart는 순수함수가 아님
+```
+
+```JavaScript
+// 따라서 복사 (얕은 보다는 for문을 이용한 깊은)를 해서 의존성을 끊어줘야 함
+const cart = ["apple", "banana"];
+
+function addCart(cart, stuff) {
+  const newCart = [];
+
+  cart.forEach((item) => newCart.push(item));
+  newCart.push(stuff);
+  
+  return newCart;
+}
+---
 
 ### 함수를 조립해서 사용하는 방법들
 
