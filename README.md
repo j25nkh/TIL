@@ -24,8 +24,7 @@
 * [011. Closure (클로저)](https://github.com/j25nkh/TIL/blob/master/JavaScript/closure.md)
 * [012. This](https://github.com/j25nkh/TIL/blob/master/JavaScript/this.md)
 * [013. Prototype (프로토타입)](https://github.com/j25nkh/TIL/blob/master/JavaScript/prototype.md)
->
-* [014. Try Catch](https://github.com/j25nkh/TIL/blob/master/JavaScript/try_catch.md)
+* [014. Error Handling](https://github.com/j25nkh/TIL/blob/master/JavaScript/error_handling.md)
 
 > 기능 Self 구현
 * [015. Throttle & Debounce](https://github.com/j25nkh/TIL/blob/master/JavaScript/throttle_debounce.md)
